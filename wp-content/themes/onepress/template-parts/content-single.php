@@ -17,7 +17,6 @@
 		</div><!-- .entry-meta -->
         <?php } ?>
 	</header><!-- .entry-header -->
-
     <?php if ( get_theme_mod( 'single_thumbnail', 0 ) && has_post_thumbnail() ) { ?>
         <div class="entry-thumbnail">
             <?php

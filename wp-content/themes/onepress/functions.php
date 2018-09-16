@@ -148,6 +148,15 @@ function onepress_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+		'name'          => esc_html__( '実績のサイドバー', 'onepress' ),
+		'id'            => 'sidebar-2',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 
     if ( class_exists( 'WooCommerce' ) ) {
         register_sidebar( array(
@@ -190,8 +199,22 @@ function onepress_scripts() {
 	wp_enqueue_style( 'onepress-animate', get_template_directory_uri() .'/assets/css/animate.min.css', array(), $version );
 	wp_enqueue_style( 'onepress-fa', get_template_directory_uri() .'/assets/css/font-awesome.min.css', array(), '4.7.0' );
 	wp_enqueue_style( 'onepress-bootstrap', get_template_directory_uri() .'/assets/css/bootstrap.min.css', false, $version );
-	wp_enqueue_style( 'onepress-style', get_template_directory_uri().'/style.css' );
-
+	wp_enqueue_style( 'onepress-style', get_template_directory_uri().'/assets/css/style.css' );
+	
+	
+	//会社概要ページ
+	if(is_page(array('data'))){
+		wp_enqueue_style( 'data-style', get_template_directory_uri().'/assets/css/data.css' );		
+	}
+	//代表挨拶ページ
+	if(is_page(array('message'))){
+		wp_enqueue_style( 'mesage-style', get_template_directory_uri().'/assets/css/message.css' );		
+	}
+	//リクルートページ
+	if(is_page(array('recruit'))){
+		wp_enqueue_style( 'recruit-style', get_template_directory_uri().'/assets/css/recruit.css' );		
+	}
+	
     $custom_css = onepress_custom_inline_style();
     wp_add_inline_style( 'onepress-style', $custom_css );
 
@@ -426,3 +449,20 @@ require get_template_directory() . '/inc/customizer.php';
  * Add theme info page
  */
 require get_template_directory() . '/inc/dashboard.php';
+
+
+/**
+ * アーカイブのタイルとから「アーカイブ:」を削除する
+ */
+add_filter( 'get_the_archive_title', function ($title) {
+    if ( is_archive() ) {       
+            $title = post_type_archive_title( '', false );   
+        } elseif (  is_category() ) {
+            $title = single_cat_title( '', false );
+        } elseif ( is_tag() ) {
+            $title = single_tag_title( '', false );
+        } elseif ( is_author() ) {
+            $title = '<span class="vcard">' . get_the_author() . '</span>';
+        }
+    return $title;
+});

@@ -2,3 +2,6 @@ wp-admin
 wp-content/uploads
 wp-includes
 wp-config.php
+/nbproject/private/
+nbproject
+node_modules

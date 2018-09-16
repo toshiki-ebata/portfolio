@@ -2,18 +2,33 @@
 # This file is distributed under the same license as the Themes - OnePress package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-10-17 11:44:07+0000\n"
+"PO-Revision-Date: 2018-09-06 04:34+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/2.3.0-alpha\n"
+"X-Generator: Poedit 1.5.7\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Themes - OnePress\n"
+"POT-Creation-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
 
 #. Description of the plugin/theme
-msgid "OnePress is an outstanding creative and flexible WordPress one page theme well suited for business website, portfolio, digital agency, product showcase, freelancers and everyone else who appreciate good design. The theme overall is an elegant and classic one, a fine example of Bootstrap 4 WordPress theme which compatibility with latest version of WooCommerce. (Live preview : http://www.famethemes.com/preview/?theme=OnePress)"
-msgstr "OnePress はビジネス Web サイトやポートフォリオ、制作会社、製品ショーケース、フリーランサーなど、デザインの真価がわかる方のための創造的で目を引く、柔軟な1ページ WordPress テーマです。テーマ全体にわたりエレガントでクラシック、最新版の WooCommerce 互換であり、Bootstrap 4 でできた WordPressテーマの素晴らしい例のひとつです。(ライブプレビュー : http://www.famethemes.com/preview/?theme=OnePress)"
+msgid ""
+"OnePress is an outstanding creative and flexible WordPress one page theme "
+"well suited for business website, portfolio, digital agency, product "
+"showcase, freelancers and everyone else who appreciate good design. The "
+"theme overall is an elegant and classic one, a fine example of Bootstrap 4 "
+"WordPress theme which compatibility with latest version of WooCommerce. "
+"(Live preview : http://www.famethemes.com/preview/?theme=OnePress)"
+msgstr ""
+"OnePress はビジネス Web サイトやポートフォリオ、制作会社、製品ショーケース、"
+"フリーランサーなど、デザインの真価がわかる方のための創造的で目を引く、柔軟な1"
+"ページ WordPress テーマです。テーマ全体にわたりエレガントでクラシック、最新版"
+"の WooCommerce 互換であり、Bootstrap 4 でできた WordPressテーマの素晴らしい例"
+"のひとつです。(ライブプレビュー : http://www.famethemes.com/preview/?"
+"theme=OnePress)"
 
 #. #-#-#-#-#  onepress.pot (OnePress 1.2.8)  #-#-#-#-#
 #. Theme Name of the plugin/theme
@@ -131,19 +146,27 @@ msgstr "ボタン #1 スタイル"
 
 #: inc/customizer.php:759
 msgid "The hero content padding bottom in percent (%)."
-msgstr "ヒーローコンテンツの下の余白 (％で指定)"
+msgstr "メインビューコンテンツの下の余白 (％で指定)"
 
 #: inc/customizer.php:743
 msgid "The hero content padding top in percent (%)."
-msgstr "ヒーローコンテンツの上の余白 (％で指定)"
+msgstr "メインビューコンテンツの上の余白 (％で指定)"
 
 #: inc/customizer.php:600
 msgid "The delay between the changing of each phrase in milliseconds."
 msgstr "フレーズごとの変化の間隔をミリ秒で指定"
 
 #: inc/customizer.php:538
-msgid "The newsletter form use MailChimp, please follow <a target=\"_blank\" href=\"http://goo.gl/uRVIst\">this guide</a> to know how to get MailChimp Action URL. Example <i>//famethemes.us8.list-manage.com/subscribe/post?u=521c400d049a59a4b9c0550c2&amp;id=83187e0006</i>"
-msgstr "ニュースレターフォームは MailChimp を利用しています。<a target=\"_blank\" href=\"http://goo.gl/uRVIst\">ガイド</a>に従って MailChimp アクション URL の取得方法を確認してください。例 <i>//famethemes.us8.list-manage.com/subscribe/post?u=521c400d049a59a4b9c0550c2&amp;id=83187e0006</i>"
+msgid ""
+"The newsletter form use MailChimp, please follow <a target=\"_blank\" href="
+"\"http://goo.gl/uRVIst\">this guide</a> to know how to get MailChimp Action "
+"URL. Example <i>//famethemes.us8.list-manage.com/subscribe/post?"
+"u=521c400d049a59a4b9c0550c2&amp;id=83187e0006</i>"
+msgstr ""
+"ニュースレターフォームは MailChimp を利用しています。<a target=\"_blank\" "
+"href=\"http://goo.gl/uRVIst\">ガイド</a>に従って MailChimp アクション URL の"
+"取得方法を確認してください。例 <i>//famethemes.us8.list-manage.com/subscribe/"
+"post?u=521c400d049a59a4b9c0550c2&amp;id=83187e0006</i>"
 
 #: inc/customizer.php:227
 msgid "Footer Info Background"
@@ -175,7 +198,7 @@ msgstr "テキストアニメーション"
 
 #: inc/customizer.php:547
 msgid "Hero Options"
-msgstr "ヒーロー設定"
+msgstr "メインビュー設定"
 
 #: inc/dashboard.php:35
 msgid "OnePress Theme %s"
@@ -208,11 +231,11 @@ msgstr "備考"
 
 #: inc/customizer.php:1788
 msgid "Features content"
-msgstr "特集コンテンツ"
+msgstr "私たちについてコンテンツ"
 
 #: inc/customizer.php:1752
 msgid "Features Layout Setting"
-msgstr "特集レイアウト設定"
+msgstr "私たちについてレイアウト設定"
 
 #: inc/customizer.php:1699 section-parts/section-features.php:4
 msgid "Features"
@@ -220,11 +243,11 @@ msgstr "機能について"
 
 #: inc/customizer.php:1684 section-parts/section-features.php:2
 msgid "features"
-msgstr "特集"
+msgstr "私たちについて"
 
 #: inc/customizer.php:1649
 msgid "Section: Features"
-msgstr "セクション: 特集"
+msgstr "セクション: 私たちについて"
 
 #: inc/customizer.php:1281 inc/customizer.php:1561 inc/customizer.php:1736
 #: inc/customizer.php:1949 inc/customizer.php:2140 inc/customizer.php:2296
@@ -258,8 +281,12 @@ msgstr "URL"
 
 #: inc/customizer.php:471 inc/customizer.php:1802 inc/customizer.php:1811
 #: inc/customizer.php:2014 inc/customizer.php:2023
-msgid "Paste your <a target=\"_blank\" href=\"http://fortawesome.github.io/Font-Awesome/icons/\">Font Awesome</a> icon class name here."
-msgstr "<a target=\"_blank\" href=\"http://fortawesome.github.io/Font-Awesome/icons/\">Font Awesome</a> のアイコンクラス名をここに貼り付けます。"
+msgid ""
+"Paste your <a target=\"_blank\" href=\"http://fortawesome.github.io/Font-"
+"Awesome/icons/\">Font Awesome</a> icon class name here."
+msgstr ""
+"<a target=\"_blank\" href=\"http://fortawesome.github.io/Font-Awesome/icons/"
+"\">Font Awesome</a> のアイコンクラス名をここに貼り付けます。"
 
 #: inc/customizer.php:470 inc/customizer.php:1805 inc/customizer.php:1810
 #: inc/customizer.php:2017 inc/customizer.php:2022
@@ -291,8 +318,12 @@ msgid "Enter your e-mail address"
 msgstr "E-mail アドレスを入力してください"
 
 #: inc/dashboard.php:142
-msgid "Support for %s WordPress theme is conducted through FameThemes support ticket system."
-msgstr "WordPress テーマ %s のサポートは、FameThemes のサポートチケットシステムを通じて行われます。"
+msgid ""
+"Support for %s WordPress theme is conducted through FameThemes support "
+"ticket system."
+msgstr ""
+"WordPress テーマ %s のサポートは、FameThemes のサポートチケットシステムを通じ"
+"て行われます。"
 
 #: inc/dashboard.php:136
 msgid "OnePress Documentation"
@@ -312,7 +343,7 @@ msgstr "4コラム"
 
 #: inc/customizer.php:2312
 msgid "Team Layout Setting"
-msgstr "チームのレイアウト設定"
+msgstr "採用のレイアウト設定"
 
 #: inc/customizer.php:1637 inc/customizer.php:1850
 msgid "Page Excerpt"
@@ -335,8 +366,11 @@ msgid "Enable parallax effect (apply for first BG image only)"
 msgstr "パララックス効果を有効にする (最初の背景画像のみ適用)"
 
 #: inc/customizer.php:351
-msgid "If you use logo and your logo is too tall, check this box to auto vertical align menu."
-msgstr "利用するロゴが高すぎる場合、チェックして自動でメニューのタテを揃えます。"
+msgid ""
+"If you use logo and your logo is too tall, check this box to auto vertical "
+"align menu."
+msgstr ""
+"利用するロゴが高すぎる場合、チェックして自動でメニューのタテを揃えます。"
 
 #: inc/customizer.php:349
 msgid "Center vertical align for menu"
@@ -425,8 +459,12 @@ msgid "Change homepage page template"
 msgstr "トップページのページテンプレートを変更"
 
 #: inc/dashboard.php:179
-msgid "In order to change homepage section contents, you will need to set template \"Frontpage\" for your homepage."
-msgstr "ホームページのセクション内容を変更するには、ホームページのテンプレートを「フロントページ」に設定します。"
+msgid ""
+"In order to change homepage section contents, you will need to set template "
+"\"Frontpage\" for your homepage."
+msgstr ""
+"ホームページのセクション内容を変更するには、ホームページのテンプレートを「フ"
+"ロントページ」に設定します。"
 
 #: inc/dashboard.php:176
 msgid "Set your homepage page template to \"Frontpage\"."
@@ -437,8 +475,13 @@ msgid "Setup front page displays"
 msgstr "フロントページの表示設定"
 
 #: inc/dashboard.php:165
-msgid "In order to have the one page look for your website, please go to Customize -&gt; Static Front Page and switch \"Front page displays\" to \"A static page\"."
-msgstr "サイトを1ページ表示にするには、「カスタマイズ」>「固定フロントページ」で、「フロントページ表示」を「固定ページ」に切り替えます。"
+msgid ""
+"In order to have the one page look for your website, please go to Customize -"
+"&gt; Static Front Page and switch \"Front page displays\" to \"A static page"
+"\"."
+msgstr ""
+"サイトを1ページ表示にするには、「カスタマイズ」>「固定フロントページ」で、"
+"「フロントページ表示」を「固定ページ」に切り替えます。"
 
 #: inc/dashboard.php:163
 msgid "Switch \"Front page displays\" to \"A static page\""
@@ -457,8 +500,13 @@ msgid "Welcome to OnePress - Version %1s"
 msgstr "OnePress バージョン%1sへようこそ。"
 
 #: inc/dashboard.php:63
-msgid "Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our <a href=\"%2$s\">Welcome page</a>"
-msgstr "ようこそ。％1$s をお選びいただきありがとうございます。テーマが提供する利益を享受するために、必ず<a href=\"%2$s\">ウェルカムページ</a>をご覧ください・"
+msgid ""
+"Welcome! Thank you for choosing %1$s! To fully take advantage of the best "
+"our theme can offer please make sure you visit our <a href=\"%2$s\">Welcome "
+"page</a>"
+msgstr ""
+"ようこそ。％1$s をお選びいただきありがとうございます。テーマが提供する利益を"
+"享受するために、必ず<a href=\"%2$s\">ウェルカムページ</a>をご覧ください・"
 
 #: inc/dashboard.php:37
 msgid "OnePress Theme"
@@ -499,16 +547,25 @@ msgid "Frontpage"
 msgstr "フロントページ"
 
 #: template-parts/content-none.php:27
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
 msgstr "お探しのものが見つからないようです。検索すると良いかもしれません。"
 
 #: template-parts/content-none.php:22
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr "検索キーワードに一致するものが見つかりませんでした。 別のキーワードで試してみてください。"
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"検索キーワードに一致するものが見つかりませんでした。 別のキーワードで試してみ"
+"てください。"
 
 #: template-parts/content-none.php:18
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "最初の投稿を公開する準備はできましたか ? <a href=\"%1$s\">ここから始めましょう</a>。"
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"最初の投稿を公開する準備はできましたか ? <a href=\"%1$s\">ここから始めましょ"
+"う</a>。"
 
 #: template-parts/content-none.php:14
 msgid "Nothing Found"
@@ -524,8 +581,13 @@ msgid "#services"
 msgstr "#services"
 
 #: section-parts/section-contact.php:48
-msgid "You can install %1$s plugin and go to Customizer &rarr; Section: Contact &rarr; Section Content to show a working contact form here."
-msgstr "%1$s プラグインをインストールし、「カスタマイザー」&rarr;「セクション: お問い合わせ」&rarr;「セクション内容」から表示するお問い合わせフォームを設定します。"
+msgid ""
+"You can install %1$s plugin and go to Customizer &rarr; Section: Contact "
+"&rarr; Section Content to show a working contact form here."
+msgstr ""
+"%1$s プラグインをインストールし、「カスタマイザー」&rarr;「セクション: お問い"
+"合わせ」&rarr;「セクション内容」から表示するお問い合わせフォームを設定しま"
+"す。"
 
 #: search.php:16
 msgid "Search Results for: %s"
@@ -544,8 +606,12 @@ msgid "%1$s installed successfully."
 msgstr "%1$s が正常にインストールされました。"
 
 #: inc/tgm-plugin-activation.php:3373
-msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
-msgstr "更新プロセスを開始しています。サーバーによっては少し時間がかかるかもしれません。しばらくお待ちください。"
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"更新プロセスを開始しています。サーバーによっては少し時間がかかるかもしれませ"
+"ん。しばらくお待ちください。"
 
 #: inc/tgm-plugin-activation.php:3371
 msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
@@ -568,8 +634,12 @@ msgid "%1$s installed and activated successfully."
 msgstr "%1$s が正常にインストールされ、有効化されました。"
 
 #: inc/tgm-plugin-activation.php:3368
-msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
-msgstr "インストールと有効化プロセスを開始しています。サーバーによっては少し時間がかかるかもしれません。しばらくお待ちください。"
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"インストールと有効化プロセスを開始しています。サーバーによっては少し時間がか"
+"かるかもしれません。しばらくお待ちください。"
 
 #: inc/tgm-plugin-activation.php:3365
 msgid "The installation of %1$s failed."
@@ -609,7 +679,8 @@ msgstr "更新するプラグインが選択されていません。何も実行
 
 #: inc/tgm-plugin-activation.php:2643
 msgid "No plugins were selected to be installed. No action taken."
-msgstr "インストールするプラグインが選択されていません。何も実行しませんでした。"
+msgstr ""
+"インストールするプラグインが選択されていません。何も実行しませんでした。"
 
 #: inc/tgm-plugin-activation.php:2612
 msgid "Activate"
@@ -663,8 +734,12 @@ msgid "Plugin"
 msgstr "プラグイン"
 
 #: inc/tgm-plugin-activation.php:2422
-msgid "No plugins to install, update or activate. <a href=\"%1$s\">Return to the Dashboard</a>"
-msgstr "インストール・更新・有効化するべきプラグインはありません。<a href=\"%1$s\">ダッシュボードに戻る</a>"
+msgid ""
+"No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
+"Dashboard</a>"
+msgstr ""
+"インストール・更新・有効化するべきプラグインはありません。<a href=\"%1$s\">"
+"ダッシュボードに戻る</a>"
 
 #: inc/tgm-plugin-activation.php:2399
 msgid "Available version:"
@@ -760,16 +835,28 @@ msgid "and"
 msgstr "と"
 
 #: inc/tgm-plugin-activation.php:938
-msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
-msgstr "リモートプラグインパッケージは複数のファイルで構成されていますが、ファイルは1つのフォルダ内にパッケージされていません。"
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+"リモートプラグインパッケージは複数のファイルで構成されていますが、ファイルは1"
+"つのフォルダ内にパッケージされていません。"
 
 #: inc/tgm-plugin-activation.php:935 inc/tgm-plugin-activation.php:938
-msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
-msgstr "プラグイン開発者に連絡し、WordPress のガイドラインに従ってプラグインをパッケージ化するように依頼してください。"
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+"プラグイン開発者に連絡し、WordPress のガイドラインに従ってプラグインをパッ"
+"ケージ化するように依頼してください。"
 
 #: inc/tgm-plugin-activation.php:935
-msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
-msgstr "リモートプラグインパッケージには、指定されたスラッグのフォルダがないため、名前の変更ができませんでした。"
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+"リモートプラグインパッケージには、指定されたスラッグのフォルダがないため、名"
+"前の変更ができませんでした。"
 
 #: inc/tgm-plugin-activation.php:828 inc/tgm-plugin-activation.php:3436
 msgid "Return to the Dashboard"
@@ -785,7 +872,8 @@ msgstr "更新する必要があります"
 
 #: inc/tgm-plugin-activation.php:520
 msgid "This plugin needs to be updated to be compatible with your theme."
-msgstr "使用中のテーマとの互換性を保つため、このプラグインを更新する必要があります。"
+msgstr ""
+"使用中のテーマとの互換性を保つため、このプラグインを更新する必要があります。"
 
 #: inc/tgm-plugin-activation.php:404
 msgid "Dismiss this notice"
@@ -864,7 +952,9 @@ msgid "Having Trouble, Need Support?"
 msgstr "お困りですか?"
 
 #: inc/dashboard.php:134
-msgid "Need any help to setup and configure %s? Please have a look at our documentations instructions."
+msgid ""
+"Need any help to setup and configure %s? Please have a look at our "
+"documentations instructions."
 msgstr "%s の設置や設定でお困りですか? ドキュメンテーションをご覧ください。"
 
 #: inc/dashboard.php:133
@@ -876,16 +966,24 @@ msgid "Start Customize"
 msgstr "カスタマイズを始める"
 
 #: inc/dashboard.php:127
-msgid "%s supports the Theme Customizer for all theme settings. Click \"Customize\" to start customize your site."
-msgstr "%s は、すべてのテーマ設定をテーマカスタマイザーで行います。「カスタマイズ」をクリックして、あなたのサイトのカスタマイズを始めましょう。"
+msgid ""
+"%s supports the Theme Customizer for all theme settings. Click \"Customize\" "
+"to start customize your site."
+msgstr ""
+"%s は、すべてのテーマ設定をテーマカスタマイザーで行います。「カスタマイズ」を"
+"クリックして、あなたのサイトのカスタマイズを始めましょう。"
 
 #: inc/dashboard.php:126
 msgid "Theme Customizer"
 msgstr "テーマカスタマイザー"
 
 #: inc/dashboard.php:111
-msgid "OnePress is a creative and flexible WordPress ONE PAGE theme well suited for business, portfolio, digital agency, product showcase, freelancers websites."
-msgstr "OnePress は、ビジネスのポートフォリオ、制作会社、製品ショーケース、フリーランサーの Web サイトに適した、創造的で柔軟な WordPress の1ページのテーマです。"
+msgid ""
+"OnePress is a creative and flexible WordPress ONE PAGE theme well suited for "
+"business, portfolio, digital agency, product showcase, freelancers websites."
+msgstr ""
+"OnePress は、ビジネスのポートフォリオ、制作会社、製品ショーケース、フリーラン"
+"サーの Web サイトに適した、創造的で柔軟な WordPress の1ページのテーマです。"
 
 #: inc/customizer.php:2776
 msgid "Fax"
@@ -961,19 +1059,19 @@ msgstr "セクション: ニュース"
 
 #: inc/customizer.php:2347
 msgid "Team members"
-msgstr "チームメンバー"
+msgstr "採用メンバー"
 
 #: inc/customizer.php:2259 section-parts/section-team.php:4
 msgid "Our Team"
-msgstr "私たちのチーム"
+msgstr "私たちの採用"
 
 #: inc/customizer.php:2244 section-parts/section-team.php:2
 msgid "team"
-msgstr "チーム"
+msgstr "採用"
 
 #: inc/customizer.php:2210
 msgid "Section: Team"
-msgstr "チームセクション"
+msgstr "採用セクション"
 
 #: inc/customizer.php:2194
 msgid "After number"
@@ -1085,7 +1183,7 @@ msgstr "セクションの設定"
 
 #: inc/customizer.php:1474
 msgid "Section: About"
-msgstr "セクション: 私たちについて"
+msgstr "セクション: 家づくりの流れ"
 
 #: inc/customizer.php:1014
 msgid "Button #2 Link"
@@ -1129,8 +1227,14 @@ msgid "Small Text"
 msgstr "小さなテキスト"
 
 #: inc/customizer.php:917
-msgid "Text Rotating Guide: Put your rotate texts separate by \"|\" into <span class=\"js-rotating\">...</span>, go to Customizer->Site Option->Animate to control rotate animation."
-msgstr "テキスト回転について: <span class=\"js-rotating\">...</span>に、「|」区切りで回転させるテキストを入力します。「カスタマイザー」>「サイト設定」>「アニメーション」で回転アニメーションを制御します。"
+msgid ""
+"Text Rotating Guide: Put your rotate texts separate by \"|\" into <span "
+"class=\"js-rotating\">...</span>, go to Customizer->Site Option->Animate to "
+"control rotate animation."
+msgstr ""
+"テキスト回転について: <span class=\"js-rotating\">...</span>に、「|」区切りで"
+"回転させるテキストを入力します。「カスタマイザー」>「サイト設定」>「アニメー"
+"ション」で回転アニメーションを制御します。"
 
 #: inc/customizer.php:915
 msgid "Large Text"
@@ -1138,7 +1242,7 @@ msgstr "大きなテキスト"
 
 #: inc/customizer.php:875
 msgid "Hero Content Layout"
-msgstr "ヒーローコンテンツレイアウト"
+msgstr "メインビューコンテンツレイアウト"
 
 #: inc/customizer.php:802
 msgid "Background Image"
@@ -1154,7 +1258,7 @@ msgstr "背景画像"
 
 #: inc/customizer.php:767
 msgid "Hero Background Media"
-msgstr "ヒーローの背景メディア"
+msgstr "メインビューの背景メディア"
 
 #: inc/customizer.php:757
 msgid "Padding Bottom:"
@@ -1170,11 +1274,11 @@ msgstr "10"
 
 #: inc/customizer.php:728
 msgid "Check this box to make hero section full screen."
-msgstr "ボックスをチェックして、ヒーローセクションを全画面表示にします。"
+msgstr "ボックスをチェックして、メインビューセクションを全画面表示にします。"
 
 #: inc/customizer.php:726
 msgid "Make hero section full screen"
-msgstr "ヒーローセクションを全画面表示にする"
+msgstr "メインビューセクションを全画面表示にする"
 
 #: inc/customizer.php:710 inc/customizer.php:1132 inc/customizer.php:1234
 #: inc/customizer.php:1514 inc/customizer.php:1689 inc/customizer.php:1902
@@ -1185,7 +1289,7 @@ msgstr "セクション ID:"
 
 #: inc/customizer.php:705 section-parts/section-hero.php:2
 msgid "hero"
-msgstr "ヒーロー"
+msgstr "メインビュー"
 
 #: inc/customizer.php:698 inc/customizer.php:1119 inc/customizer.php:1221
 #: inc/customizer.php:1501 inc/customizer.php:1676 inc/customizer.php:1889
@@ -1203,11 +1307,11 @@ msgstr "セクションを非表示にします。"
 
 #: inc/customizer.php:680
 msgid "Hero Settings"
-msgstr "ヒーロー設定"
+msgstr "メインビュー設定"
 
 #: inc/customizer.php:670
 msgid "Section: Hero"
-msgstr "セクション: ヒーロー"
+msgstr "セクション: メインビュー"
 
 #: inc/customizer.php:536
 msgid "MailChimp Action URL"
@@ -1219,7 +1323,9 @@ msgstr "ニュースレターのフォームタイトル"
 
 #: inc/customizer.php:506
 msgid "Check this box to hide footer newsletter form."
-msgstr "フッターのニュースレターのフォームを非表示にするには、このボックスをチェックします。"
+msgstr ""
+"フッターのニュースレターのフォームを非表示にするには、このボックスをチェック"
+"します。"
 
 #: inc/customizer.php:504
 msgid "Hide Footer Newsletter?"
@@ -1234,7 +1340,8 @@ msgid "Social Footer Title"
 msgstr "SNS フッターのタイトル"
 
 #: inc/customizer.php:423
-msgid "These social profiles setting below will display at the footer of your site."
+msgid ""
+"These social profiles setting below will display at the footer of your site."
 msgstr "以下の SNS プロフィール設定はサイトのフッターに表示されます。"
 
 #: inc/customizer.php:410
@@ -1259,7 +1366,9 @@ msgstr "ページトップへ戻るを非表示にする。"
 
 #: inc/customizer.php:161
 msgid "Check this box to disable all element animation when scroll."
-msgstr "ボックスをチェックして、スクロール時に全ての要素アニメーションを無効にします。"
+msgstr ""
+"ボックスをチェックして、スクロール時に全ての要素アニメーションを無効にしま"
+"す。"
 
 #: inc/customizer.php:159
 msgid "Disable animation effect?"
@@ -1326,8 +1435,12 @@ msgid "All plugins installed and activated successfully. %1$s"
 msgstr "すべてのプラグインが正常にインストール、有効化されました。 %1$s"
 
 #: functions.php:337 inc/tgm-plugin-activation.php:402
-msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
-msgstr "プラグインを有効化できませんでした。このテーマには上位バージョンの %s が必要です。プラグインを更新してください。"
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+"プラグインを有効化できませんでした。このテーマには上位バージョンの %s が必要"
+"です。プラグインを更新してください。"
 
 #: functions.php:336 inc/tgm-plugin-activation.php:401
 msgid "No action taken. Plugin %1$s was already active."
@@ -1363,9 +1476,15 @@ msgid_plural "Begin installing plugins"
 msgstr[0] "プラグインのインストールを開始"
 
 #: functions.php:329 inc/tgm-plugin-activation.php:377
-msgid "Sorry, but you do not have the correct permissions to activate the %1$s plugin."
-msgid_plural "Sorry, but you do not have the correct permissions to activate the %1$s plugins."
-msgstr[0] "申し訳ありませんが、あなたは %1$s プラグインを有効化するための適切な権限がありません。"
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugins."
+msgstr[0] ""
+"申し訳ありませんが、あなたは %1$s プラグインを有効化するための適切な権限があ"
+"りません。"
 
 #: functions.php:328 inc/tgm-plugin-activation.php:372
 msgid "The following recommended plugin is currently inactive: %1$s."
@@ -1378,9 +1497,14 @@ msgid_plural "The following required plugins are currently inactive: %1$s."
 msgstr[0] "以下の必須プラグインが現在無効化されています: %1$s"
 
 #: functions.php:326 inc/tgm-plugin-activation.php:362
-msgid "Sorry, but you do not have the correct permissions to update the %1$s plugin."
-msgid_plural "Sorry, but you do not have the correct permissions to update the %1$s plugins."
-msgstr[0] "申し訳ありませんが、あなたは %1$s プラグインを更新するための適切な権限がありません。"
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %1$s plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %1$s "
+"plugins."
+msgstr[0] ""
+"申し訳ありませんが、あなたは %1$s プラグインを更新するための適切な権限があり"
+"ません。"
 
 #: functions.php:325 inc/tgm-plugin-activation.php:357
 msgid "There is an update available for: %1$s."
@@ -1388,14 +1512,26 @@ msgid_plural "There are updates available for the following plugins: %1$s."
 msgstr[0] "プラグインの更新が利用可能です (%1$s) 。"
 
 #: functions.php:324 inc/tgm-plugin-activation.php:352
-msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
-msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
-msgstr[0] "このテーマとの最大の互換性を確保するため、以下のプラグインを最新バージョンに更新する必要があります: %1$s"
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+"このテーマとの最大の互換性を確保するため、以下のプラグインを最新バージョンに"
+"更新する必要があります: %1$s"
 
 #: functions.php:323 inc/tgm-plugin-activation.php:347
-msgid "Sorry, but you do not have the correct permissions to install the %1$s plugin."
-msgid_plural "Sorry, but you do not have the correct permissions to install the %1$s plugins."
-msgstr[0] "申し訳ありませんが、あなたは %1$s プラグインをインストールするための適切な権限がありません。"
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugins."
+msgstr[0] ""
+"申し訳ありませんが、あなたは %1$s プラグインをインストールするための適切な権"
+"限がありません。"
 
 #: functions.php:322 inc/tgm-plugin-activation.php:342
 msgid "This theme recommends the following plugin: %1$s."
@@ -1499,8 +1635,11 @@ msgid "Most Used Categories"
 msgstr "よく使われているカテゴリー"
 
 #: 404.php:26
-msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
-msgstr "ここには何も見つかりませんでした。以下のリンクまたは検索をお試しください。"
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"ここには何も見つかりませんでした。以下のリンクまたは検索をお試しください。"
 
 #: 404.php:15
 msgid "Oops! That page can&rsquo;t be found."

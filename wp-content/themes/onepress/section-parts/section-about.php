@@ -27,7 +27,7 @@ $content_source = get_theme_mod( 'onepress_about_content_source' );
                         echo '<h5 class="section-subtitle">' . esc_html($subtitle) . '</h5>';
                     } ?>
                     <?php if ($title != '') {
-                        echo '<h2 class="section-title">' . esc_html($title) . '</h2>';
+                        echo '<h2 class="section-title"><a href="/project-flow/">' . esc_html($title) . '</a></h2>';
                     } ?>
                     <?php if ( $desc != '' ) {
                         echo '<div class="section-desc">' . apply_filters( 'onepress_the_content', $desc ) . '</div>';
