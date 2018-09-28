@@ -14,6 +14,7 @@ $layout = onepress_get_layout();
 
 	<div id="content" class="site-content">
 
+		<?php onepress_breadcrumb(); ?>
 		<div class="page-header">
 			<div class="container">
 				<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
@@ -21,7 +22,6 @@ $layout = onepress_get_layout();
 			</div>
 		</div>
 
-		<?php onepress_breadcrumb(); ?>
 
 		<div id="content-inside" class="container <?php echo esc_attr( $layout ); ?>">
 			<div id="primary" class="content-area">

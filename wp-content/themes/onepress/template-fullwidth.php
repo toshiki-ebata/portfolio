@@ -6,7 +6,7 @@
  */
 
 get_header();
-
+onepress_breadcrumb();
 /**
  * @since 2.0.0
  * @see onepress_display_page_title
@@ -14,9 +14,6 @@ get_header();
 do_action( 'onepress_page_before_content' );
 ?>
 	<div id="content" class="site-content">
-        <?php
-        onepress_breadcrumb();
-        ?>
 		<div id="content-inside" class="container no-sidebar">
 			<div id="primary" class="content-area">
 				<main id="main" class="site-main" role="main">
