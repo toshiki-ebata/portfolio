@@ -1,0 +1,110 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2018/10/17, 4:30:30
+    Author     : Toshiki
+*/
+.top{
+	text-align:center;
+}
+.flow{
+	margin-top:20px;
+	@media screen and (min-width: 500px) {
+		ul{
+			display:flex;
+			flex-wrap: wrap;
+			align-items: center;
+			padding-left: 0;
+			li{
+				list-style:none;
+				text-align:center;
+				margin: 10px auto;
+				width:15%;
+				img{
+					padding-bottom: 10px;
+					&.arrow{
+						width:50%;
+					}
+				}
+				.arrow-down{
+					width: 20%;
+					padding-bottom: 20px;
+				}
+				.cercle{
+					width: 110px;
+					height: 110px;
+					border:1px solid;
+					border-radius: 50%;
+					padding-top:20px;
+					margin:auto;
+					.text{
+						margin: auto;
+					}
+				}
+			}
+			.border{
+				width: 50px;
+				border:2px solid;
+			}
+		}
+		.flex-right{
+			flex-direction : row-reverse;
+		}
+	}
+	@media screen and (max-width: 500px) {
+		ul{
+			display:flex;
+			flex-direction: column;
+			align-items: center;
+			padding-left:0px;
+			margin-bottom:0px;
+			li{
+				list-style:none;
+				text-align:center;
+				margin: 10px auto;
+				width:80%;
+				img{
+					width: 80%;
+					padding: 10px 0px;
+					&.arrow{
+						width:20%;
+					}
+					&.turn-right{
+						transform: rotate(90deg);
+					}
+					&.turn-left{
+						transform: rotate(-90deg);
+					}
+				}
+				.arrow-down{
+					width:9%;
+				}
+				.cercle{
+					width: 110px;
+					height: 110px;
+					border:1px solid;
+					border-radius: 50%;
+					padding-top:20px;
+					margin:auto;
+					.text{
+						margin: auto;
+					}
+				}
+			}
+			.border{
+				width: 50px;
+				border:2px solid;
+			}
+		}
+	}
+	
+}
+
+.disp-none{
+	display: none;
+}
+
+

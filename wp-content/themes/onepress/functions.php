@@ -214,6 +214,14 @@ function onepress_scripts() {
 	if(is_page(array('recruit'))){
 		wp_enqueue_style( 'recruit-style', get_template_directory_uri().'/assets/css/recruit.css' );		
 	}
+	//家づくりの流れページ
+	if(is_page(array('project-flow'))){
+		wp_enqueue_style( 'project-flow-style', get_template_directory_uri().'/assets/css/project-flow.css' );		
+		wp_enqueue_style( 'color-box-style', get_template_directory_uri().'/assets/css/colorbox.css' );		
+		wp_enqueue_script( 'colorbox-js', get_template_directory_uri() . '/assets/js/jquery.colorbox-min.js', array(), $version, true );
+		wp_enqueue_script( 'popup-js', get_template_directory_uri() . '/assets/js/popup.js', array(), $version, true );
+	}
+	
 	
     $custom_css = onepress_custom_inline_style();
     wp_add_inline_style( 'onepress-style', $custom_css );
