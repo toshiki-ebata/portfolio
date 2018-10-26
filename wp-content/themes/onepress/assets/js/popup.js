@@ -1,5 +1,7 @@
 jQuery(function($){
 	$('.colorbox').colorbox({
-	inline:true
+	inline:true,
+	width:"80%",
+	maxWidth:700,
 	});
 });

@@ -45,12 +45,12 @@ do_action( 'onepress_page_before_content' );
 							<li><img class="arrow turn-right" src="/wp-content/themes/onepress/assets/images/project-flow/arrow-right.svg" alt="右矢印"></li>
 							<li><div class="cercle"><span class="text">02<br><a href="/contact/">お問合せ<br>（メール・TEL）</a></span></div></li>
 							<li><img class="arrow turn-right" src="/wp-content/themes/onepress/assets/images/project-flow/arrow-right.svg" alt="右矢印"></li>
-							<li><img src="/wp-content/themes/onepress/assets/images/project-flow/plan.png" alt="概算資金計画"><div class="cercle"><span class="text">03<br>概算資金計画</span></div></li>
+							<li><img src="/wp-content/themes/onepress/assets/images/project-flow/plan.png" alt="概算資金計画"><div class="cercle"><a class="colorbox" href="#03"><span class="text">03<br>概算資金計画</span></a></div></li>
 						</ul>
 						<ul class="flex-right">
-							<li><img class="arrow-down" src="/wp-content/themes/onepress/assets/images/project-flow/arrow-down.svg" alt="下矢印"><div class="cercle"><a class="colorbox" href="#04" ><span class="text">04<br>土地探し<br>現場確認</span></a></div></li>
+							<li><img class="arrow-down" src="/wp-content/themes/onepress/assets/images/project-flow/arrow-down.svg" alt="下矢印"><div class="cercle"><a class="colorbox" href="#04"><span class="text">04<br>土地探し<br>現場確認</span></a></div></li>
 							<li><img class="arrow turn-left" src="/wp-content/themes/onepress/assets/images/project-flow/arrow-left.svg" alt="左矢印"></li>
-							<li><img src="/wp-content/themes/onepress/assets/images/project-flow/hearing.png" alt="ヒアリング"><div class="cercle"><span class="text">05<br>ご要望<br>ヒアリング</span></div></li>
+							<li><img src="/wp-content/themes/onepress/assets/images/project-flow/hearing.png" alt="ヒアリング"><div class="cercle"><a class="colorbox" href="#05"><span class="text">05<br>ご要望<br>ヒアリング</span></a></div></li>
 							<li><img class="arrow turn-left" src="/wp-content/themes/onepress/assets/images/project-flow/arrow-left.svg" alt="左矢印"></li>
 							<li><div class="cercle"><span class="text">06<br>トータル<br>コーディネート</span></div></li>
 						</ul>
@@ -85,18 +85,43 @@ do_action( 'onepress_page_before_content' );
 					</div>
 					
 					<div class="disp-none">
-						<div id="04">
-							<p>概算資金計画</p>
+						<div id="03" class="pop-up">		
+							<p class="popup-title">お客様に最適な資金計画をご提案いたします</p>
+							<p>予算に合わせて、部材や設備・仕様など細かい部分までご相談させていただき、<br>
+							プランの概算見積もりと資金計画を提案いたします。合わせて住宅ローンの相談も承ります。</p>
 						</div>
+						<div id="04" class="pop-up flex">
+							<div class="flexbox">
+								<p class="popup-title">土地探しをしている方</p>
+								<p>敷地調査、土地探しサポートも承っております。<br>
+								お客様の想定している条件を教えて下さい。<br>
+								立地条件・広さ・価格などのご要望を伺い、<br>
+								ご希望の土地情報をご提案いたします。</p>
+							</div>
+							<div class="flexbox">
+								<p class="popup-title">土地はお持ちの方</p>
+								<p>思い描いている家が建てられるのか確認いたします。
+								土地にかかる制限の確認、電気ガスなどの敷地調査、地盤調査を行います。
+								調査結果に基づき、地盤改良の有無、規制、法的手続きの方法などを状況に応じてご説明いたします。<br>
+								建て替えの場合は、解体費用、仮住まいのご相談も承ります。</p>
+							</div>
+						</div>
+						<div id="05" class="pop-up">		
+							<p class="popup-title">こんなご要望にお応えします</p>
+							<ul>
+								<li>2世帯住宅にしたいけど、キッチンとトイレは別にしたい</li>
+								<li>天井の高い家にしたい。吹き抜けにすると寒いって聞くけど、実際に寒いの？</li>
+								<li>家事がしやすい間取りってどんなの？家事動線って何？</li>
+								<li>かっこいい家に住みたいな。住宅デザイナーさんに入ってほしいな。</li>
+							</ul>
+						</div>
+						<div class="disp-none" id="09">埋め込み</div>
+						<div class="disp-none" id="11">埋め込み</div>
+						<div class="disp-none" id="13">埋め込み</div>
+						<div class="disp-none" id="15">埋め込み</div>
+						<div class="disp-none" id="16">埋め込み</div>
+						<div class="disp-none" id="18">埋め込み</div>
 					</div>
-					<div class="disp-none" id="05">埋め込み</div>
-					<div class="disp-none" id="07">埋め込み</div>
-					<div class="disp-none" id="09">埋め込み</div>
-					<div class="disp-none" id="11">埋め込み</div>
-					<div class="disp-none" id="13">埋め込み</div>
-					<div class="disp-none" id="15">埋め込み</div>
-					<div class="disp-none" id="16">埋め込み</div>
-					<div class="disp-none" id="18">埋め込み</div>
 				
 
 					<?php endwhile; // End of the loop. ?>

@@ -108,3 +108,33 @@ and open the template in the editor.
 .disp-none {
   display: none;
 }
+
+#colorbox .pop-up {
+  margin: 10px;
+}
+
+@media screen and (min-width: 500px) {
+  #colorbox .pop-up.flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #colorbox .pop-up .flexbox {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #colorbox .pop-up.flex {
+    display: flex;
+    flex-direction: column;
+  }
+  #colorbox .pop-up.flex .flexbox {
+    margin-bottom: 10px;
+  }
+}
+
+#colorbox .pop-up .popup-title {
+  font-size: 150%;
+  text-align: center;
+  margin-bottom: 5px;
+}
