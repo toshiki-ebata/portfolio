@@ -44,6 +44,9 @@ and open the template in the editor.
 					.text{
 						margin: auto;
 					}
+					a{
+						text-decoration:underline;
+					}
 				}
 			}
 			.border{
@@ -94,6 +97,9 @@ and open the template in the editor.
 					.text{
 						margin: auto;
 					}
+					a{
+						text-decoration:underline;
+					}
 				}
 			}
 			.border{
@@ -131,6 +137,10 @@ and open the template in the editor.
 					margin-bottom: 10px;
 				}	
 			}
+		}
+		img{
+			display: block;
+			margin: 0 auto 15px auto;
 		}
 		.popup-title{
 			font-size:150%;

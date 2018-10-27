@@ -221,6 +221,10 @@ function onepress_scripts() {
 		wp_enqueue_script( 'colorbox-js', get_template_directory_uri() . '/assets/js/jquery.colorbox-min.js', array(), $version, true );
 		wp_enqueue_script( 'popup-js', get_template_directory_uri() . '/assets/js/popup.js', array(), $version, true );
 	}
+	//zehページ
+	if(is_page(array('zeh'))){
+		wp_enqueue_style( 'recruit-style', get_template_directory_uri().'/assets/css/zeh.css' );		
+	}
 	
 	
     $custom_css = onepress_custom_inline_style();
