@@ -3,7 +3,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : 2018/10/17, 4:30:30
     Author     : Toshiki
 */
@@ -51,6 +51,7 @@ and open the template in the editor.
   }
   .flow ul li .cercle a {
     text-decoration: underline;
+	vertical-align: -webkit-baseline-middle;
   }
   .flow ul .border {
     width: 50px;
@@ -104,6 +105,7 @@ and open the template in the editor.
   }
   .flow ul li .cercle a {
     text-decoration: underline;
+	vertical-align: -webkit-baseline-middle;
   }
   .flow ul .border {
     width: 50px;
@@ -123,6 +125,9 @@ and open the template in the editor.
   #colorbox .pop-up.flex {
     display: flex;
     flex-wrap: wrap;
+  }
+  #colorbox .pop-up .image-box {
+    width: 100%;
   }
   #colorbox .pop-up .flexbox {
     width: 50%;
