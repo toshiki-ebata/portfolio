@@ -6,7 +6,7 @@
  */
 
 get_header();
-
+ onepress_breadcrumb();
 /**
  * @since 2.0.0
  * @see onepress_display_page_title
@@ -14,9 +14,6 @@ get_header();
 do_action( 'onepress_page_before_content' );
 ?>
 	<div id="content" class="site-content">
-        <?php
-        onepress_breadcrumb();
-        ?>
 		<div id="content-inside" class="container no-sidebar">
 			<div id="primary" class="content-area">
 				<main id="main" class="site-main" role="main">
@@ -43,7 +40,7 @@ do_action( 'onepress_page_before_content' );
 						<ul>
 							<li><img src="/wp-content/themes/onepress/assets/images/project-flow/start.png" alt="START"><div class="cercle"><span class="text">01<br>START</span></div></li>
 							<li><img class="arrow turn-right" src="/wp-content/themes/onepress/assets/images/project-flow/arrow-right.svg" alt="右矢印"></li>
-							<li><div class="cercle"><span class="text">02<br><a href="/contact/">お問合せ<br>（メール・TEL）</a></span></div></li>
+							<li class="no-image"><div class="cercle"><span class="text">02<br><a href="/contact/">お問合せ<br>(メール・TEL)</a></span></div></li>
 							<li><img class="arrow turn-right" src="/wp-content/themes/onepress/assets/images/project-flow/arrow-right.svg" alt="右矢印"></li>
 							<li><img src="/wp-content/themes/onepress/assets/images/project-flow/plan.png" alt="概算資金計画"><div class="cercle"><a class="colorbox" href="#03"><span class="text">03<br>概算資金計画</span></a></div></li>
 						</ul>
@@ -52,7 +49,7 @@ do_action( 'onepress_page_before_content' );
 							<li><img class="arrow turn-left" src="/wp-content/themes/onepress/assets/images/project-flow/arrow-left.svg" alt="左矢印"></li>
 							<li><img src="/wp-content/themes/onepress/assets/images/project-flow/hearing.png" alt="ヒアリング"><div class="cercle"><a class="colorbox" href="#05"><span class="text">05<br>ご要望<br>ヒアリング</span></a></div></li>
 							<li><img class="arrow turn-left" src="/wp-content/themes/onepress/assets/images/project-flow/arrow-left.svg" alt="左矢印"></li>
-							<li><div class="cercle"><span class="text">06<br>トータル<br>コーディネート</span></div></li>
+							<li class="no-image"><div class="cercle"><span class="text">06<br>トータル<br>コーディネート</span></div></li>
 						</ul>
 						<ul>
 							<li><img class="arrow-down" src="/wp-content/themes/onepress/assets/images/project-flow/arrow-down.svg" alt="下矢印"><div class="cercle"><a class="colorbox" href="#07"><span class="text">07<br>プランニング</span></a></div></li>
@@ -64,23 +61,23 @@ do_action( 'onepress_page_before_content' );
 						<ul class="flex-right">
 							<li><img class="arrow-down" src="/wp-content/themes/onepress/assets/images/project-flow/arrow-down.svg" alt="下矢印"><div class="cercle"><a class="colorbox" href="#10"><span class="text">10<br>お見積り</span></a></div></li>
 							<li><img class="arrow turn-left" src="/wp-content/themes/onepress/assets/images/project-flow/arrow-left.svg" alt="左矢印"></li>
-							<li><div class="cercle"><a class="colorbox" href="#11"><span class="text">11<br>請負契約</span></a></div></li>
+							<li class="no-image"><div class="cercle"><a class="colorbox" href="#11"><span class="text">11<br>請負契約</span></a></div></li>
 							<li><img class="arrow turn-left" src="/wp-content/themes/onepress/assets/images/project-flow/arrow-left.svg" alt="左矢印"></li>
-							<li><div class="cercle"><a class="colorbox" href="#12"><span class="text">12<br>設計確認</span></a></div></li>
+							<li class="no-image"><div class="cercle"><a class="colorbox" href="#12"><span class="text">12<br>設計確認</span></a></div></li>
 						</ul>
 						<ul>
 							<li><img class="arrow-down" src="/wp-content/themes/onepress/assets/images/project-flow/arrow-down.svg" alt="下矢印"><div class="cercle"><a class="colorbox" href="#13"><span class="text">13<br>地鎮祭</span></a></div></li>
 							<li><img class="arrow turn-right" src="/wp-content/themes/onepress/assets/images/project-flow/arrow-right.svg" alt="右矢印"></li>
 							<li><img src="/wp-content/themes/onepress/assets/images/project-flow/construction.png" alt="着工"><div class="cercle"><a class="colorbox" href="#15"><span class="text">15<br>着工</span></a></div></li>
 							<li><img class="arrow turn-right" src="/wp-content/themes/onepress/assets/images/project-flow/arrow-right.svg" alt="右矢印"></li>
-							<li><div class="cercle"><a class="colorbox" href="#16"><span class="text">16<br>現場確認</span></a></div></li>
+							<li class="no-image"><div class="cercle"><a class="colorbox" href="#16"><span class="text">16<br>現場確認</span></a></div></li>
 						</ul>
 						<ul class="flex-right">
 							<li><img class="arrow-down" src="/wp-content/themes/onepress/assets/images/project-flow/arrow-down.svg" alt="下矢印"><div class="cercle"><span class="text">17<br>竣工</span></div></li>
 							<li><img class="arrow turn-left" src="/wp-content/themes/onepress/assets/images/project-flow/arrow-left.svg" alt="左矢印"></li>
 							<li><img src="/wp-content/themes/onepress/assets/images/project-flow/completion.png" alt="お引渡し"><div class="cercle"><a class="colorbox" href="#18"><span class="text">18<br>お引渡し</span></a></div></li>
 							<li><img class="arrow turn-left" src="/wp-content/themes/onepress/assets/images/project-flow/arrow-left.svg" alt="左矢印"></li>
-							<li><div class="cercle"><span class="text">19<br>アフターサービス</span></div></li>
+							<li class="no-image"><div class="cercle"><span class="text">19<br>アフターサービス</span></div></li>
 						</ul>
 					</div>
 
@@ -105,8 +102,8 @@ do_action( 'onepress_page_before_content' );
 								<p class="popup-title">土地はお持ちの方</p>
 								<p>思い描いている家が建てられるのか確認いたします。
 								土地にかかる制限の確認、電気ガスなどの敷地調査、地盤調査を行います。
-								調査結果に基づき、地盤改良の有無、規制、法的手続きの方法などを状況に応じてご説明いたします。<br>
-								建て替えの場合は、解体費用、仮住まいのご相談も承ります。</p>
+								調査結果に基づき、地盤改良の有無、規制、法的手続きの方法などを状況に応じてご説明いたします。
+								</p>
 							</div>
 						</div>
 						<div id="05" class="pop-up">

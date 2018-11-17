@@ -28,10 +28,14 @@ and open the template in the editor.
     margin: 10px auto;
     width: 15%;
   }
+  .flow ul li.no-image {
+    margin-top: 13%;
+  }
   .flow ul li img {
     padding-bottom: 10px;
   }
   .flow ul li img.arrow {
+    margin-top: 82%;
     width: 50%;
   }
   .flow ul li .arrow-down {
@@ -51,7 +55,6 @@ and open the template in the editor.
   }
   .flow ul li .cercle a {
     text-decoration: underline;
-	vertical-align: -webkit-baseline-middle;
   }
   .flow ul .border {
     width: 50px;
@@ -105,7 +108,6 @@ and open the template in the editor.
   }
   .flow ul li .cercle a {
     text-decoration: underline;
-	vertical-align: -webkit-baseline-middle;
   }
   .flow ul .border {
     width: 50px;

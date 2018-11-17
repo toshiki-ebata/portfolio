@@ -141,6 +141,7 @@
         .hero-large-text {
             -webkit-transition-delay: 0.7s; /* Safari */
             transition-delay: 0.7s;
+			font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体","Open Sans", Helvetica, Arial, sans-serif;
         }
         .hero-small-text {
             -webkit-transition-delay: 0.8s; /* Safari */
@@ -1203,4 +1204,18 @@ div.wpcf7-response-output {
     .inner {
         display: block;
     }
+}
+
+.gallery-content{
+	text-align: center;
+	@media screen and (min-width: 500px) {
+	.sp-logo{
+		display: none;
+	}
+}
+@media screen and (max-width: 500px) {
+	.pc-logo{
+		display: none;
+	}
+}
 }

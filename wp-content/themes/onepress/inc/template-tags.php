@@ -1354,7 +1354,7 @@ if ( ! function_exists( 'onepress_footer_site_info' ) ) {
         ?>
         <?php printf(esc_html__('Copyright %1$s %2$s %3$s', 'onepress'), '&copy;', esc_attr(date('Y')), esc_attr(get_bloginfo())); ?>
         <span class="sep"> &ndash; </span>
-        <?php printf(esc_html__('%1$s theme by %2$s', 'onepress'), '<a href="' . esc_url('https://www.famethemes.com/themes/onepress', 'onepress') . '">OnePress</a>', 'FameThemes'); ?>
+        All Rights Reserved.
         <?php
     }
 }
@@ -1395,7 +1395,7 @@ if ( ! function_exists( 'onepress_is_selective_refresh' ) ) {
 
 if ( ! function_exists( 'onepress_footer_widgets' ) ) {
     function onepress_footer_widgets(){
-        $footer_columns = absint( get_theme_mod( 'footer_layout' , 4 ) );
+        $footer_columns = absint( get_theme_mod( 'footer_layout' , 2 ) );
         $max_cols = 12;
         $layouts = 12;
         if ( $footer_columns > 1 ){
@@ -1475,7 +1475,7 @@ if ( ! function_exists( 'onepress_display_page_title' ) ) {
             $page_id = get_the_ID();
         }
         $el = 'h1';
-        if ( is_singular('post') ) {
+        if ( is_singular('post')||is_singular('architectural') ) {
             if ( ! apply_filters( 'onepress_single_show_page_header', false ) ) {
                 return;
             }

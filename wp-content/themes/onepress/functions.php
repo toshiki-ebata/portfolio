@@ -169,7 +169,7 @@ function onepress_widgets_init() {
             'after_title'   => '</h2>',
         ) );
     }
-    for ( $i = 1; $i<= 4; $i++ ) {
+    for ( $i = 1; $i<= 2; $i++ ) {
         register_sidebar(array(
             'name' => sprintf( __('Footer %s', 'onepress'), $i ),
             'id' => 'footer-'.$i,
@@ -200,33 +200,33 @@ function onepress_scripts() {
 	wp_enqueue_style( 'onepress-fa', get_template_directory_uri() .'/assets/css/font-awesome.min.css', array(), '4.7.0' );
 	wp_enqueue_style( 'onepress-bootstrap', get_template_directory_uri() .'/assets/css/bootstrap.min.css', false, $version );
 	wp_enqueue_style( 'onepress-style', get_template_directory_uri().'/assets/css/style.css' );
-	
-	
+
+
 	//会社概要ページ
 	if(is_page(array('data'))){
-		wp_enqueue_style( 'data-style', get_template_directory_uri().'/assets/css/data.css' );		
+		wp_enqueue_style( 'data-style', get_template_directory_uri().'/assets/css/data.css' );
 	}
 	//代表挨拶ページ
 	if(is_page(array('message'))){
-		wp_enqueue_style( 'mesage-style', get_template_directory_uri().'/assets/css/message.css' );		
+		wp_enqueue_style( 'mesage-style', get_template_directory_uri().'/assets/css/message.css' );
 	}
 	//リクルートページ
 	if(is_page(array('recruit'))){
-		wp_enqueue_style( 'recruit-style', get_template_directory_uri().'/assets/css/recruit.css' );		
+		wp_enqueue_style( 'recruit-style', get_template_directory_uri().'/assets/css/recruit.css' );
 	}
 	//家づくりの流れページ
 	if(is_page(array('project-flow'))){
-		wp_enqueue_style( 'project-flow-style', get_template_directory_uri().'/assets/css/project-flow.css' );		
-		wp_enqueue_style( 'color-box-style', get_template_directory_uri().'/assets/css/colorbox.css' );		
+		wp_enqueue_style( 'project-flow-style', get_template_directory_uri().'/assets/css/project-flow.css' );
+		wp_enqueue_style( 'color-box-style', get_template_directory_uri().'/assets/css/colorbox.css' );
 		wp_enqueue_script( 'colorbox-js', get_template_directory_uri() . '/assets/js/jquery.colorbox-min.js', array(), $version, true );
 		wp_enqueue_script( 'popup-js', get_template_directory_uri() . '/assets/js/popup.js', array(), $version, true );
 	}
 	//zehページ
 	if(is_page(array('zeh'))){
-		wp_enqueue_style( 'recruit-style', get_template_directory_uri().'/assets/css/zeh.css' );		
+		wp_enqueue_style( 'recruit-style', get_template_directory_uri().'/assets/css/zeh.css' );
 	}
-	
-	
+
+
     $custom_css = onepress_custom_inline_style();
     wp_add_inline_style( 'onepress-style', $custom_css );
 
@@ -467,8 +467,8 @@ require get_template_directory() . '/inc/dashboard.php';
  * アーカイブのタイルとから「アーカイブ:」を削除する
  */
 add_filter( 'get_the_archive_title', function ($title) {
-    if ( is_archive() ) {       
-            $title = post_type_archive_title( '', false );   
+    if ( is_archive() ) {
+            $title = post_type_archive_title( '', false );
         } elseif (  is_category() ) {
             $title = single_cat_title( '', false );
         } elseif ( is_tag() ) {
@@ -478,3 +478,9 @@ add_filter( 'get_the_archive_title', function ($title) {
         }
     return $title;
 });
+
+/**
+ * ウィジェットでショートコードを使えるようにする
+ */
+add_filter('widget_text', 'do_shortcode' );
+

@@ -24,9 +24,13 @@ and open the template in the editor.
 				text-align:center;
 				margin: 10px auto;
 				width:15%;
+				&.no-image{
+					margin-top: 13%;
+				}
 				img{
 					padding-bottom: 10px;
 					&.arrow{
+						margin-top: 82%;
 						width:50%;
 					}
 				}

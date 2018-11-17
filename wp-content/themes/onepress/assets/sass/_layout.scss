@@ -102,8 +102,25 @@ Footer widgets
     }
     .sidebar {
         .widget {
-            margin-bottom: 30px;
+            margin-bottom: 0px;
         }
     }
+	@media screen and (min-width: 500px) {
+			//PC
+			#footer-1{
+				display: none;
+			}
+			#footer-2{
+				margin: auto;
+				width: 100%;
+				max-width: 80%;
+			}
+		}
+		@media screen and (max-width: 500px) {
+			//SP
+			#footer-2{
+				display: none;
+			}
+		}
 
 }
