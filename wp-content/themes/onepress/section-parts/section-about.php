@@ -34,7 +34,8 @@ $content_source = get_theme_mod( 'onepress_about_content_source' );
                     } ?>
                 </div>
                 <?php } ?>
-                <div class="row">
+                <div class="image">
+					 <img src="/wp-content/themes/onepress/assets/images/top/family.png" alt="家族"/>
                     <?php
                     if ( ! empty ( $page_ids ) ) {
                         $col = 3;

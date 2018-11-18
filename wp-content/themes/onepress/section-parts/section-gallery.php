@@ -29,9 +29,8 @@ $layout = get_theme_mod( 'onepress_gallery_layout', 'default' );
             </div>
         <?php } ?>
         <div class="gallery-content">
-            <?php
-            onepress_gallery_generate();
-            ?>
+            <img class="pc-logo" src="/wp-content/themes/onepress/assets/images/top/pc-zeh-logo.png" alt="zeh"/>
+			<img class="sp-logo" src="/wp-content/themes/onepress/assets/images/top/sp-zeh-logo.png" alt="zeh"/>
         </div>
         <?php
         $readmore_link = get_theme_mod( 'onepress_g_readmore_link' );
