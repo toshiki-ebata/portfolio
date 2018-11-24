@@ -225,6 +225,10 @@ function onepress_scripts() {
 	if(is_page(array('zeh'))){
 		wp_enqueue_style( 'recruit-style', get_template_directory_uri().'/assets/css/zeh.css' );
 	}
+	//お問合せ
+	if(is_page(array('contact'))){
+		wp_enqueue_style( 'recruit-style', get_template_directory_uri().'/assets/css/contact.css' );
+	}
 
 
     $custom_css = onepress_custom_inline_style();

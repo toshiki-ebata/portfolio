@@ -1,0 +1,69 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 2018/09/08, 16:27:50
+    Author     : Toshiki
+*/
+
+@media screen and (min-width: 500px) {
+	#content-inside{
+		width:65%;
+	}
+}
+@media screen and (max-width: 500px) {
+	#content-inside{
+		width:80%;
+	}
+}
+
+.form-table{
+	width: 100%;
+	font-size:15px;
+
+	tr{
+		&:nth-child(even){
+			background-color: #e6e5e5; /* 偶数行をうっすらグレーに */
+		}
+		td{
+			text-align: center;
+		}
+		.requied{
+				color: red;
+				font-weight: normal;
+		}
+		input[type="submit"]{
+				width: 80%;
+			}
+		@media screen and (min-width: 500px) {
+			th{
+				padding:10px;
+				width:195px;
+			}
+			td{
+				padding:10px;
+			}
+
+			input,textarea{
+				width:100%;
+			}
+
+		}
+		@media screen and (max-width: 500px) {
+			th,td{
+				display: block;
+				padding: 5px 10px;
+				input,textarea{
+				width:100%;
+			}
+			}
+
+		}
+	}
+}
+
+
+
+
