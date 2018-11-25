@@ -5,3 +5,5 @@ wp-config.php
 /nbproject/private/
 nbproject
 node_modules
+phpmyadmin
+kantan-cgi
