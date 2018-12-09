@@ -3,20 +3,27 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : 2018/09/09, 7:23:39
     Author     : Toshiki
 */
-.message-text {
-  height: 0;
-  padding-top: 65%;
-  background-position: top;
-  min-height: initial;
+@media screen and (max-width: 500px) {
+  .wp-block-cover.aligncenter {
+    display: none;
+  }
 }
 
-.message-text .wp-block-cover-image-text {
-  width: 50%;
-  font-size: 1.5vw;
-  position: absolute;
-  top: 25%;
+.wp-block-cover.aligncenter .wp-block-cover-text {
+  width: 60%;
+  font-size: 2vw;
+}
+
+.sp-message-text, .sp-message-image {
+  font-size: 4vw;
+}
+
+@media screen and (min-width: 500px) {
+  .sp-message-text, .sp-message-image {
+    display: none;
+  }
 }
