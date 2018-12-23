@@ -3,7 +3,7 @@
 /**
  * Instagram Spider [MOD : WP - Insta Gallery]
  * @author Karan Singh
- * @version 1.3.13
+ * @version 1.4.1
  * @depends RUSpider
  * @description script to get instagram media by using Username and Tag-name. added WP (wp_remote_request) to run in WP.
  */
@@ -42,14 +42,16 @@ class InstagramSpider
             return false;
         }
         
+        $items = array();
+        
         // $inURL = $this->instagram . $username . '/media/';
         // $inURL = $this->instagram . $username . '/?__a=1';
-        $inURL = 'https://apinsta.herokuapp.com/u/' . $username;  // Apr 2018
+        $inURL = 'https://apinsta.herokuapp.com/u/' . $username;  // CLOSED
         // For next 12 images, use ID of the last item (maxId = media.nodes[11].id) in the max_id param: /{USER_NAME}/?__a=1&max_id={maxId}
+        /*
         $instaRes = $this->igSpider($inURL);
         $instaRes = @json_decode($instaRes);
         
-        $items = array();
         if (isset($instaRes->graphql->user->edge_owner_to_timeline_media->edges)) {
             $instaItems = $instaRes->graphql->user->edge_owner_to_timeline_media->edges;
             if (! empty($instaItems) && is_array($instaItems)) {
@@ -79,6 +81,7 @@ class InstagramSpider
                 }
             }
         }
+        */
         
         // if empty, continus with the HTML API
         if (empty($items)) {
