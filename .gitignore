@@ -8,3 +8,4 @@ node_modules
 phpmyadmin
 kantan-cgi
 robots.txt
+wp-content/plugins/siteguard/really-simple-captcha/tmp/
