@@ -250,7 +250,7 @@ if (isset($InstaGalleryItem['ig_display_type'])) {
 					<table>
 						<tr>
 							<th scope="row"><?php _e('Instagram Button Text','insta-gallery'); ?>:</th>
-							<td><input name="insta_instalink-text" type="text" placeholder="Instagramへ"
+							<td><input name="insta_instalink-text" type="text" placeholder="view on Instagram"
 								value="<?php if(!empty($InstaGalleryItem['insta_instalink-text'])){echo $InstaGalleryItem['insta_instalink-text']; }?>" /> <span class="description"><?php _e('update Instagram button text here.','insta-gallery'); ?></span></td>
 						</tr>
 						<tr>

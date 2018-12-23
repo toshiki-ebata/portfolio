@@ -6,19 +6,27 @@
  * Author URI: https://www.karansingh.ml/
  * Requires at least: 3.8
  * Requires PHP: 5.3
- * Tested up to: 4.9
+ * Tested up to: 5.0
  * Text Domain: insta-gallery
  * Domain Path: /languages/
- * Version: 1.6.3
+ * Version: 1.6.6
  */
+
+/*
+ *  ******  ******  ***** ******   ***** ****** 
+ *  min CSS/JS,  update ENV, Testing
+ * ****** TODO: ****
+ * 
+ * 
+*/
+
 if (! defined('ABSPATH')) {
     exit(); // Exit if accessed directly.
 }
 
-// plugin global constants
-define('INSGALLERY_VER', '1.6.3');
-define('INSGALLERY_PRODUCTION', true); // ******  ******  ***** ******   ***** ******  ENV, CSS/JS min ******  ****
-
+// global constants
+define('INSGALLERY_VER', '1.6.6');
+define('INSGALLERY_PRODUCTION', true); 
 
 define('INSGALLERY_PATH', plugin_dir_path(__FILE__));
 define('INSGALLERY_URL', plugins_url('', __FILE__));

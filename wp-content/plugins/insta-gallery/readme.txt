@@ -3,8 +3,8 @@ Contributors: buntisoft, sktei007
 Tags: instagram, instagram feed, instagram widget, gallery, gallery widget, pictures, slider, carousel slider, image gallery, image slider, instagram gallery, instagram pictures
 Requires at least: 3.8.0
 Requires PHP: 5.3
-Tested up to: 4.9
-Stable tag: 1.6.3
+Tested up to: 5.0
+Stable tag: 1.6.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Donate link: https://www.paypal.me/karanpay
@@ -73,6 +73,15 @@ this error visible sometimes in PHP 7+ installations due to the missing CURL ext
 5. Gallery Widget
 
 == Changelog ==
+= 1.6.6 =
+code bug fixed 
+
+= 1.6.5 =
+JS files issue with WP5 solved 
+
+= 1.6.4 =
+speed improvements and small changes
+
 = 1.6.3 =
 added Carousel autoplay time option
 Carousel dotted nav removed
@@ -205,6 +214,15 @@ IE 8,9 Carousel support dropped
 
 
 == Upgrade Notice ==
+= 1.6.6 =
+coding issue solved
+
+= 1.6.5 =
+JS issue solved
+
+= 1.6.4 =
+speed improvements
+
 = 1.6.3 =
 now set autoplay interval
 

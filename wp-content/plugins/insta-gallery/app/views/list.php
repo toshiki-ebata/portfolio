@@ -37,7 +37,7 @@ $InstaGallerySetting = get_option('insta_gallery_setting');
         }
         ?>
 			</td>
-				<td><code>[insta-gallery id="<?php echo $k; ?>"]</code><input type="text" onclick="select()" value='[insta-gallery id="<?php echo $k; ?>"]' readonly /> </td>
+				<td><input type="text" onclick="select()" value='[insta-gallery id="<?php echo $k; ?>"]' readonly /> </td>
 				<td><a href="<?php echo INSGALLERY_URL_ADMIN_PAGE; ?>&tab=edit&ig_item=<?php echo $k; ?>" class="ig-btn"><span class="dashicons dashicons-edit"></span><?php _e('Edit','insta-gallery'); ?> </a>
 					<a href="<?php echo INSGALLERY_URL_ADMIN_PAGE; ?>&ig_item_delete=<?php echo $k; ?>" class="ig-btn" onclick="return ig_item_delete();"><span class="dashicons dashicons-trash"></span><?php _e('Delete','insta-gallery'); ?></a></td>
 			</tr>
@@ -130,7 +130,7 @@ $InstaGallerySetting = get_option('insta_gallery_setting');
 					<tr>
 						<th><?php _e('Developer Mode','insta-gallery'); ?>:</th>
 						<td><input type="checkbox" name="igs_dev_mode" value="1" <?php if(!empty($InstaGallerySetting['igs_dev_mode'])) echo 'checked';?> /><span
-							class="description"> <?php _e('check this box to enable experimental/advance features of the plugin.','insta-gallery'); ?> </span></td>
+							class="description"> <?php _e('check this box to enable experimental features of the plugin.','insta-gallery'); ?> </span></td>
 					</tr>
 				</tbody>
 				<tfoot>
