@@ -115,12 +115,15 @@ Footer widgets
 				width: 100%;
 				max-width: 80%;
 			}
-		}
-		@media screen and (max-width: 500px) {
+	}
+	@media screen and (max-width: 500px) {
 			//SP
 			#footer-2{
 				display: none;
 			}
-		}
+	}
+	.qr_code{
+		text-align: center;
+	}
 
 }

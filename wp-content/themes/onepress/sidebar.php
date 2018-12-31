@@ -16,6 +16,10 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 	<div id="secondary" class="widget-area sidebar" role="complementary">
 		<?php dynamic_sidebar( 'sidebar-2' ); ?>
 	</div><!-- #secondary -->
+<?php elseif(is_singular( 'blog' ) ||is_post_type_archive( 'blog' )):?>
+<div id="secondary" class="widget-area sidebar" role="complementary">
+		<?php dynamic_sidebar( 'sidebar-3' ); ?>
+	</div><!-- #secondary -->
 <?php else:?>
 	<div id="secondary" class="widget-area sidebar" role="complementary">
 		<?php dynamic_sidebar( 'sidebar-1' ); ?>
