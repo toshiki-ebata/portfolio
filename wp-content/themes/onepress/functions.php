@@ -497,3 +497,31 @@ add_filter( 'get_the_archive_title', function ($title) {
  */
 add_filter('widget_text', 'do_shortcode' );
 
+/**
+ * 
+ */
+function change_post_menu_label() {
+	global $menu;
+	global $submenu;
+	$menu[5][0] = 'ニュース';
+	$submenu['edit.php'][5][0] = 'ニュース一覧';
+	$submenu['edit.php'][10][0] = '新しいニュース';
+	$submenu['edit.php'][16][0] = 'タグ';
+	//echo ";
+   }
+   function change_post_object_label() {
+	global $wp_post_types;
+	$labels = &$wp_post_types['post']->labels;
+	$labels->name = 'ニュース';
+	$labels->singular_name = 'ニュース';
+	$labels->add_new = _x('追加', 'ニュース');
+	$labels->add_new_item = 'ニュースの新規追加';
+	$labels->edit_item = 'ニュースの編集';
+	$labels->new_item = '新規ニュース';
+	$labels->view_item = 'ニュースを表示';
+	$labels->search_items = 'ニュースを検索';
+	$labels->not_found = '記事が見つかりませんでした';
+	$labels->not_found_in_trash = 'ゴミ箱に記事は見つかりませんでした';
+   }
+   add_action( 'init', 'change_post_object_label' );
+   add_action( 'admin_menu', 'change_post_menu_label' );
