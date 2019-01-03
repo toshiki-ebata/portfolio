@@ -7,16 +7,16 @@ and open the template in the editor.
     Created on : 2018/09/09, 7:23:39
     Author     : Toshiki
 */
-.wp-block-cover.aligncenter{
+.pc-message-text
+{
 	@media screen and (max-width: 500px) {
-	//SP
-		display:none;
-	}
-
-	.wp-block-cover-text{
-			width: 60%;
-			font-size: 2vw;
-	}
+		//SP
+			display:none;
+		}
+}
+.wp-block-cover-text{
+		width: 60%;
+		font-size: 2vw;
 }
 .sp-message-text,.sp-message-image{
 	@media screen and (min-width: 500px) {

@@ -8,12 +8,12 @@ and open the template in the editor.
     Author     : Toshiki
 */
 @media screen and (max-width: 500px) {
-  .wp-block-cover.aligncenter {
+  .pc-message-text {
     display: none;
   }
 }
 
-.wp-block-cover.aligncenter .wp-block-cover-text {
+.wp-block-cover-text {
   width: 60%;
   font-size: 2vw;
 }
