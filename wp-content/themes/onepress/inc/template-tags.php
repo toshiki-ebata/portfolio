@@ -1353,7 +1353,8 @@ if ( ! function_exists( 'onepress_footer_site_info' ) ) {
     function onepress_footer_site_info()
     {
         ?>
-			<a href="https://www.facebook.com/people/Arcrea-%E3%82%A2%E3%83%BC%E3%82%AF%E3%83%AC%E3%82%A2/100029329667650" target="_blank"><img style="width: 26px;margin-right: 28px;" src="/wp-content/themes/onepress/assets/images/icon/facebook.svg" atl="facebook"></a>
+			<a href=https://www.facebook.com/pg/ARCREA-254514492086818/" target="_blank"><img style="width: 26px;margin-right: 28px;" src="/wp-content/themes/onepress/assets/images/icon/facebook.svg" atl="facebook"></a>
+			<img style="width:80px;margin-right: 28px;" src="/wp-content/themes/onepress/assets/images/icon/fb_qr.png">
         <?php printf(esc_html__('Copyright %1$s %2$s %3$s', 'onepress'), '&copy;', esc_attr(date('Y')), esc_attr(get_bloginfo())); ?>
         <span class="sep"> &ndash; </span>
         All Rights Reserved.
