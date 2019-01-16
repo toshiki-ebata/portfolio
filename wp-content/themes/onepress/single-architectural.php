@@ -28,7 +28,29 @@ do_action( 'onepress_page_before_content' );
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<?php get_template_part( 'template-parts/content', 'single' ); ?>
-
+					<table>
+						<tr>
+							<th>住所</th>
+							<td><?php echo get_post_meta($post->ID , 'address' ,true); ?></td>
+						</tr>
+						<tr>
+							<th>主要用途</th>
+							<td><?php echo get_post_meta($post->ID , 'to_use' ,true); ?></td>
+						</tr>
+						<tr>
+							<th>主要構造</th>
+							<td><?php echo get_post_meta($post->ID , 'structure' ,true); ?></td>	
+						</tr>
+						<tr>
+							<th>規模</th>
+							<td><?php echo get_post_meta($post->ID , 'scale' ,true); ?></td>	
+						</tr>
+						<tr>
+							<th>完成</th>
+							<td><?php echo get_post_meta($post->ID , 'complete_month' ,true); ?></td>	
+						</tr>
+					</table>
+					
 					<?php
 					// If comments are open or we have at least one comment, load up the comment template.
 					if ( comments_open() || get_comments_number() ) :
