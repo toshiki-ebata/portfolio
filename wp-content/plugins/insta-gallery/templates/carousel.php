@@ -10,7 +10,7 @@
  * happen.
  *
  * @package 	insta-gallery/templates
- * @version     1.1.2
+ * @version     1.1.3
  */
 if (! defined('ABSPATH')) {
     exit();
@@ -41,8 +41,17 @@ $igs_frontend = array(
 $i = 1;
 foreach ($instaItems as $item) {
     if (! empty($item['img_low']) && ! empty($item['img_standard']) && ! empty($item['img_thumb'])) {
-        $img_src = ($IGItem['insta_car-slidespv'] == 1) ? $item['img_standard'] : ((($IGItem['insta_car-slidespv'] > 10) || ($IGItem['insta_thumb-size'] == 'small')) ? $item['img_thumb'] : $item['img_low']);
+		$img_src = $item['img_standard'];
+		if($IGItem['insta_thumb-size'] == 'small'){
+			$img_src = $item['img_thumb'];
+		}
+		if($IGItem['insta_thumb-size'] == 'medium'){
+			$img_src = $item['img_low'];
+		}
         $link = $iplink = 'https://www.instagram.com/p/' . $item['code'] . '/';
+        if(!empty($item['link'])){
+            $link = $iplink = $item['link'];
+        }
         if ($IGItem['insta_gal-popup']) {
             $link = $item['img_standard'];
         }
@@ -52,7 +61,7 @@ foreach ($instaItems as $item) {
         }
         ?>
         <div class="swiper-slide">
-			<a href="<?php echo $link; ?>" target="blank" data-title="<?php echo $caption; ?>" data-iplink="<?php echo $iplink; ?>" class="nofancybox"> <img alt="instagram"
+			<a href="<?php echo $link; ?>" target="blank" data-title="<?php echo $caption; ?>" data-iplink="<?php echo $iplink; ?>" class="nofancybox" data-elementor-open-lightbox="no" > <img alt="instagram"
 				class="instacarousel-image" src="<?php echo $img_src; ?>" />
         <?php
         if ($IGItem['insta_likes'] || $IGItem['insta_comments']) {

@@ -10,7 +10,7 @@
  * happen.
  *
  * @package 	insta-gallery/templates
- * @version     1.1.2
+ * @version     1.1.3
  */
 if (! defined('ABSPATH')) {
     exit();
@@ -20,7 +20,6 @@ if (! defined('ABSPATH')) {
 // $IGItem : array of gallery item setting
 // $instaItems : array of gallery items
 
-// src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeD0iMHB4IiB5PSIwcHgiDQp2aWV3Qm94PSIwIDAgNTEyIDUxMiIgZmlsbD0iI2RkZCI+DQo8Zz48cGF0aCBkPSJNMzUyLDBIMTYwQzcxLjY0OCwwLDAsNzEuNjQ4LDAsMTYwdjE5MmMwLDg4LjM1Miw3MS42NDgsMTYwLDE2MCwxNjBoMTkyYzg4LjM1MiwwLDE2MC03MS42NDgsMTYwLTE2MFYxNjAgQzUxMiw3MS42NDgsNDQwLjM1MiwwLDM1MiwweiBNNDY0LDM1MmMwLDYxLjc2LTUwLjI0LDExMi0xMTIsMTEySDE2MGMtNjEuNzYsMC0xMTItNTAuMjQtMTEyLTExMlYxNjBDNDgsOTguMjQsOTguMjQsNDgsMTYwLDQ4IGgxOTJjNjEuNzYsMCwxMTIsNTAuMjQsMTEyLDExMlYzNTJ6Ii8+PC9nPg0KPGc+PHBhdGggZD0iTTI1NiwxMjhjLTcwLjY4OCwwLTEyOCw1Ny4zMTItMTI4LDEyOHM1Ny4zMTIsMTI4LDEyOCwxMjhzMTI4LTU3LjMxMiwxMjgtMTI4UzMyNi42ODgsMTI4LDI1NiwxMjh6IE0yNTYsMzM2IGMtNDQuMDk2LDAtODAtMzUuOTA0LTgwLTgwYzAtNDQuMTI4LDM1LjkwNC04MCw4MC04MHM4MCwzNS44NzIsODAsODBDMzM2LDMwMC4wOTYsMzAwLjA5NiwzMzYsMjU2LDMzNnoiLz48L2c+DQo8Zz48Y2lyY2xlIGN4PSIzOTMuNiIgY3k9IjExOC40IiByPSIxNy4wNTYiLz48L2c+DQo8L3N2Zz4="
 
 $JSIGSelector = '#instagal-' . $IGItem['gid']; // Gallery selector
 
@@ -35,10 +34,19 @@ $igs_frontend = array(
 $i = 1;
 foreach ($instaItems as $item) {
     
-    $img_src = ($IGItem['insta_gal-cols'] == 1) ? $item['img_standard'] : ((($IGItem['insta_gal-cols'] > 9) || ($IGItem['insta_thumb-size'] == 'small')) ? $item['img_thumb'] : $item['img_low']);
+	$img_src = $item['img_standard'];
+	if($IGItem['insta_thumb-size'] == 'small'){
+			$img_src = $item['img_thumb'];
+	}
+	if($IGItem['insta_thumb-size'] == 'medium'){
+			$img_src = $item['img_low'];
+	}		
     $hovered = $IGItem['insta_gal-hover'] ? 'ighover' : '';
     $spacing = $IGItem['insta_gal-spacing'] ? '' : 'no-spacing';
     $link = $iplink = 'https://www.instagram.com/p/' . $item['code'] . '/';
+    if(!empty($item['link'])){
+        $link = $iplink = $item['link'];
+    }
     if ($IGItem['insta_gal-popup']) {
         $link = $item['img_standard'];
     }
@@ -48,7 +56,7 @@ foreach ($instaItems as $item) {
     }
     ?>
     <div class="ig-item <?php echo $hovered.' '. $spacing; ?> cols-<?php echo $IGItem['insta_gal-cols']; ?>" style="width: <?php echo (100 / $IGItem['insta_gal-cols']); ?>%;">
-		<a href="<?php echo $link; ?>" target="blank" data-title="<?php echo $caption; ?>" data-iplink="<?php echo $iplink; ?>" class="nofancybox"> <img src="<?php echo $img_src; ?>"
+		<a href="<?php echo $link; ?>" target="blank" data-title="<?php echo $caption; ?>" data-iplink="<?php echo $iplink; ?>" class="nofancybox" data-elementor-open-lightbox="no" > <img src="<?php echo $img_src; ?>"
 			alt="instagram" class="instagallery-image" />
 	<?php
     if ($IGItem['insta_likes'] || $IGItem['insta_comments']) {
