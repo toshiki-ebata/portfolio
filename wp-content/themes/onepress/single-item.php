@@ -28,6 +28,8 @@ do_action( 'onepress_page_before_content' );
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<?php get_template_part( 'template-parts/content', 'item' ); ?>
+
+					<h2>外観写真</h2>
 					<div class="bxslider">
 						<?php
 						//外観写真
@@ -40,29 +42,59 @@ do_action( 'onepress_page_before_content' );
 							<? } 
 						}?>	
 					</div>
-					<table>
+					<h2>このプランの料金シュミレーション</h2>
+					<table class="simulation">
 						<tr>
-							<th>住所</th>
-							<td><?php echo get_post_meta($post->ID , 'address' ,true); ?></td>
+							<th>
+							</th>
+							<th>
+								ゼロエネルギー
+							</th>
+							<th>
+								現在の省エネ住宅
+							</th>
+							<th>
+								差額
+							</th>
 						</tr>
 						<tr>
-							<th>主要用途</th>
-							<td><?php echo get_post_meta($post->ID , 'to_use' ,true); ?></td>
+							<th>建物本体金額</th>
+							<td class="align-right"><?php echo number_format(get_post_meta($post->ID , '建物本体金額(ゼロエネルギー)' ,true)); ?></td>
+							<td class="align-right"><?php echo number_format(get_post_meta($post->ID , '建物本体金額(現在の省エネ住宅)' ,true)); ?></td>
+							<?php $minus =(get_post_meta($post->ID , '建物本体金額(ゼロエネルギー)' ,true)-get_post_meta($post->ID , '建物本体金額(現在の省エネ住宅)' ,true)<0)?'minus':'';?>
+							<td class="align-right <?php echo $minus;?>"><?php echo number_format(get_post_meta($post->ID , '建物本体金額(ゼロエネルギー)' ,true)-get_post_meta($post->ID , '建物本体金額(現在の省エネ住宅)' ,true)); ?></td>
 						</tr>
 						<tr>
-							<th>主要構造</th>
-							<td><?php echo get_post_meta($post->ID , 'structure' ,true); ?></td>	
+							<th>月々の支払額(ローン・光熱費)</th>
+							<td class="align-right"><?php echo number_format(get_post_meta($post->ID , '月々の支払額(ローン・光熱費)(ゼロエネルギー)' ,true)); ?></td>
+							<td class="align-right"><?php echo number_format(get_post_meta($post->ID , '月々の支払額(ローン・光熱費)(現在の省エネ住宅)' ,true)); ?></td>
+							<?php $minus =(get_post_meta($post->ID , '月々の支払額(ローン・光熱費)(ゼロエネルギー)' ,true)-get_post_meta($post->ID , '月々の支払額(ローン・光熱費)(現在の省エネ住宅)' ,true)<0)?'minus':'';?>
+							<td class="align-right <?php echo $minus;?>"><?php echo number_format(get_post_meta($post->ID , '月々の支払額(ローン・光熱費)(ゼロエネルギー)' ,true)-get_post_meta($post->ID , '月々の支払額(ローン・光熱費)(現在の省エネ住宅)' ,true)); ?></td>
 						</tr>
 						<tr>
-							<th>規模</th>
-							<td><?php echo get_post_meta($post->ID , 'scale' ,true); ?></td>	
+							<th>1年の支払額</th>
+							<td class="align-right"><?php echo number_format(get_post_meta($post->ID , '1年間の支払額(ゼロエネルギー)' ,true)); ?></td>	
+							<td class="align-right"><?php echo number_format(get_post_meta($post->ID , '1年間の支払額(現在の省エネ住宅)' ,true)); ?></td>	
+							<?php $minus =(get_post_meta($post->ID , '1年間の支払額(ゼロエネルギー)' ,true)-get_post_meta($post->ID , '1年間の支払額(現在の省エネ住宅)' ,true)<0)?'minus':'';?>
+							<td class="align-right <?php echo $minus;?>"><?php echo number_format(get_post_meta($post->ID , '1年間の支払額(ゼロエネルギー)' ,true)-get_post_meta($post->ID , '1年間の支払額(現在の省エネ住宅)' ,true)); ?></td>	
 						</tr>
 						<tr>
-							<th>完成</th>
-							<td><?php echo get_post_meta($post->ID , 'complete_month' ,true); ?></td>	
+							<th>35年間の支払</th>
+							<td class="align-right"><?php echo number_format(get_post_meta($post->ID , '35年間の支払額(ゼロエネルギー)' ,true)); ?></td>	
+							<td class="align-right"><?php echo number_format(get_post_meta($post->ID , '35年間の支払額(現在の省エネ住宅)' ,true)); ?></td>	
+							<?php $minus =(get_post_meta($post->ID , '35年間の支払額(ゼロエネルギー)' ,true)-get_post_meta($post->ID , '35年間の支払額(現在の省エネ住宅)' ,true)<0)?'minus':'';?>
+							<td class="align-right <?php echo $minus;?>"><?php echo number_format(get_post_meta($post->ID , '35年間の支払額(ゼロエネルギー)' ,true)-get_post_meta($post->ID , '35年間の支払額(現在の省エネ住宅)' ,true)); ?></td>	
+						</tr>
+						<tr>
+							<th>50年間の支払額</th>
+							<td class="align-right"><?php echo number_format(get_post_meta($post->ID , '50年間の支払額(ゼロエネルギー)' ,true)); ?></td>	
+							<td class="align-right"><?php echo number_format(get_post_meta($post->ID , '50年間の支払額(現在の省エネ住宅)' ,true)); ?></td>	
+							<?php $minus =(get_post_meta($post->ID , '50年間の支払額(ゼロエネルギー)' ,true)-get_post_meta($post->ID , '50年間の支払額(現在の省エネ住宅)' ,true)<0)?'minus':'';?>
+							<td class="align-right <?php echo $minus;?>"><?php echo number_format(get_post_meta($post->ID , '50年間の支払額(ゼロエネルギー)' ,true)-get_post_meta($post->ID , '50年間の支払額(現在の省エネ住宅)' ,true)); ?></td>	
 						</tr>
 					</table>
 					
+					<h2>間取り図</h2>
 					<?php
 					//間取り図
 					for($i=1;$i<3;$i++){

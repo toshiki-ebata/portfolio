@@ -1,3 +1,20 @@
+.flexbox{
+    display: flex;
+    .entry-header{
+        margin-right: 20px;
+    }
+    .entry-content{
+        margin-bottom: 0px;
+    }
+}
 .bx-wrapper{
     margin:auto;
   }
+.simulation{
+    .align-right{
+        text-align:right;
+    }
+    .minus{
+        color: red;
+    }
+}
