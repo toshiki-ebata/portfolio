@@ -209,7 +209,8 @@ function onepress_scripts() {
 	wp_enqueue_style( 'onepress-fa', get_template_directory_uri() .'/assets/css/font-awesome.min.css', array(), '4.7.0' );
 	wp_enqueue_style( 'onepress-bootstrap', get_template_directory_uri() .'/assets/css/bootstrap.min.css', false, $version );
 	wp_enqueue_style( 'onepress-style', get_template_directory_uri().'/assets/css/style.css' );
-
+	$custom_css = onepress_custom_inline_style();
+    wp_add_inline_style( 'onepress-style', $custom_css );
 
 	//会社概要ページ
 	if(is_page(array('data'))){
@@ -238,14 +239,28 @@ function onepress_scripts() {
 	if(is_page(array('contact'))){
 		wp_enqueue_style( 'recruit-style', get_template_directory_uri().'/assets/css/contact.css' );
 	}
+	//商品archive
+	if(is_archive(array('item'))){
+		wp_enqueue_style( 'recruit-style', get_template_directory_uri().'/assets/css/item-archive.css' );
+	}
+	//商品ページ
+	if(is_singular(array('item'))){
+		wp_enqueue_style( 'recruit-style', get_template_directory_uri().'/assets/css/item.css' );
+		wp_enqueue_style( 'lightbox-style', get_template_directory_uri().'/assets/css/lightbox.min.css' );
+		wp_enqueue_style( 'bxSlider-style', 'https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css' );
+		wp_enqueue_script('bxSlider', 'https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js', array('jquery'), '4.1.2', true);
+		wp_enqueue_script( 'slider-js', get_template_directory_uri() . '/assets/js/slider.js', array('bxSlider'), $version, true );
+		wp_enqueue_script( 'lightbox-js', get_template_directory_uri() . '/assets/js/lightbox.min.js', array(), $version, true );
+	}
 
 
-    $custom_css = onepress_custom_inline_style();
-    wp_add_inline_style( 'onepress-style', $custom_css );
+
+    
 
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'onepress-js-plugins', get_template_directory_uri() . '/assets/js/plugins.js', array( 'jquery' ), $version, true );
 	wp_enqueue_script( 'onepress-js-bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), $version, true );
+
 
     // Animation from settings.
     $onepress_js_settings = array(

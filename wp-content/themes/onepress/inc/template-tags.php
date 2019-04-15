@@ -1478,7 +1478,7 @@ if ( ! function_exists( 'onepress_display_page_title' ) ) {
             $page_id = get_the_ID();
         }
         $el = 'h1';
-        if ( is_singular('post')||is_singular('architectural') ) {
+        if ( is_singular('post')||is_singular('architectural')||is_singular('blog')||is_singular('item') ) {
             if ( ! apply_filters( 'onepress_single_show_page_header', false ) ) {
                 return;
             }
