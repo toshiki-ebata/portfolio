@@ -29,7 +29,6 @@ do_action( 'onepress_page_before_content' );
 
 					<?php get_template_part( 'template-parts/content', 'item' ); ?>
 
-					<h2>外観写真</h2>
 					<div class="bxslider">
 						<?php
 						//外観写真
@@ -42,51 +41,51 @@ do_action( 'onepress_page_before_content' );
 							<? } 
 						}?>	
 					</div>
-					<h2>このプランの料金シュミレーション</h2>
+					<h2>ZEHシュミレーション</h2>
 					<table class="simulation">
 						<tr>
 							<th>
 							</th>
 							<th>
-								ゼロエネルギー
+								ゼロエネルギーハウスの場合
 							</th>
 							<th>
-								現在の省エネ住宅
+								平成28年省エネ基準の場合
 							</th>
 							<th>
-								差額
+								支払い差額
 							</th>
 						</tr>
 						<tr>
-							<th>建物本体金額</th>
+							<th>コミコミフル装備価格</th>
 							<td class="align-right"><?php echo number_format(get_post_meta($post->ID , '建物本体金額(ゼロエネルギー)' ,true)); ?></td>
 							<td class="align-right"><?php echo number_format(get_post_meta($post->ID , '建物本体金額(現在の省エネ住宅)' ,true)); ?></td>
 							<?php $minus =(get_post_meta($post->ID , '建物本体金額(ゼロエネルギー)' ,true)-get_post_meta($post->ID , '建物本体金額(現在の省エネ住宅)' ,true)<0)?'minus':'';?>
 							<td class="align-right <?php echo $minus;?>"><?php echo number_format(get_post_meta($post->ID , '建物本体金額(ゼロエネルギー)' ,true)-get_post_meta($post->ID , '建物本体金額(現在の省エネ住宅)' ,true)); ?></td>
 						</tr>
 						<tr>
-							<th>月々の支払額(ローン・光熱費)</th>
+							<th>月々の支払額(住宅ローン＋光熱費)</th>
 							<td class="align-right"><?php echo number_format(get_post_meta($post->ID , '月々の支払額(ローン・光熱費)(ゼロエネルギー)' ,true)); ?></td>
 							<td class="align-right"><?php echo number_format(get_post_meta($post->ID , '月々の支払額(ローン・光熱費)(現在の省エネ住宅)' ,true)); ?></td>
 							<?php $minus =(get_post_meta($post->ID , '月々の支払額(ローン・光熱費)(ゼロエネルギー)' ,true)-get_post_meta($post->ID , '月々の支払額(ローン・光熱費)(現在の省エネ住宅)' ,true)<0)?'minus':'';?>
 							<td class="align-right <?php echo $minus;?>"><?php echo number_format(get_post_meta($post->ID , '月々の支払額(ローン・光熱費)(ゼロエネルギー)' ,true)-get_post_meta($post->ID , '月々の支払額(ローン・光熱費)(現在の省エネ住宅)' ,true)); ?></td>
 						</tr>
 						<tr>
-							<th>1年の支払額</th>
+							<th>1年の支払額(住宅ローン＋光熱費)</th>
 							<td class="align-right"><?php echo number_format(get_post_meta($post->ID , '1年間の支払額(ゼロエネルギー)' ,true)); ?></td>	
 							<td class="align-right"><?php echo number_format(get_post_meta($post->ID , '1年間の支払額(現在の省エネ住宅)' ,true)); ?></td>	
 							<?php $minus =(get_post_meta($post->ID , '1年間の支払額(ゼロエネルギー)' ,true)-get_post_meta($post->ID , '1年間の支払額(現在の省エネ住宅)' ,true)<0)?'minus':'';?>
 							<td class="align-right <?php echo $minus;?>"><?php echo number_format(get_post_meta($post->ID , '1年間の支払額(ゼロエネルギー)' ,true)-get_post_meta($post->ID , '1年間の支払額(現在の省エネ住宅)' ,true)); ?></td>	
 						</tr>
 						<tr>
-							<th>35年間の支払</th>
+							<th>ローン完済までの35年間の支払(住宅ローン＋光熱費)</th>
 							<td class="align-right"><?php echo number_format(get_post_meta($post->ID , '35年間の支払額(ゼロエネルギー)' ,true)); ?></td>	
 							<td class="align-right"><?php echo number_format(get_post_meta($post->ID , '35年間の支払額(現在の省エネ住宅)' ,true)); ?></td>	
 							<?php $minus =(get_post_meta($post->ID , '35年間の支払額(ゼロエネルギー)' ,true)-get_post_meta($post->ID , '35年間の支払額(現在の省エネ住宅)' ,true)<0)?'minus':'';?>
 							<td class="align-right <?php echo $minus;?>"><?php echo number_format(get_post_meta($post->ID , '35年間の支払額(ゼロエネルギー)' ,true)-get_post_meta($post->ID , '35年間の支払額(現在の省エネ住宅)' ,true)); ?></td>	
 						</tr>
 						<tr>
-							<th>50年間の支払額</th>
+							<th>老後までの50年間の支払額(住宅ローン＋光熱費)</th>
 							<td class="align-right"><?php echo number_format(get_post_meta($post->ID , '50年間の支払額(ゼロエネルギー)' ,true)); ?></td>	
 							<td class="align-right"><?php echo number_format(get_post_meta($post->ID , '50年間の支払額(現在の省エネ住宅)' ,true)); ?></td>	
 							<?php $minus =(get_post_meta($post->ID , '50年間の支払額(ゼロエネルギー)' ,true)-get_post_meta($post->ID , '50年間の支払額(現在の省エネ住宅)' ,true)<0)?'minus':'';?>

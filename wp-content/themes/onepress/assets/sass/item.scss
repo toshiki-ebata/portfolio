@@ -1,6 +1,14 @@
+.entry-header{
+    margin-bottom: 20px;
+}
+h2{
+    font-size: 1.5rem;
+}
 .flexbox{
-    display: flex;
-    .entry-header{
+    font-size: 1.1rem;
+    margin-top: 20px;
+    display:flex;
+    .entry-subtitle{
         margin-right: 20px;
     }
     .entry-content{
