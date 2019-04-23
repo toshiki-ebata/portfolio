@@ -1,11 +1,15 @@
+html{
+    font-size: 62.5%;
+}
+    
 .entry-header{
     margin-bottom: 20px;
 }
 h2{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 .flexbox{
-    font-size: 1.1rem;
+    font-size: 1.8rem;
     margin-top: 20px;
     display:flex;
     .entry-subtitle{
@@ -18,11 +22,17 @@ h2{
 .bx-wrapper{
     margin:auto;
   }
-.simulation{
-    .align-right{
-        text-align:right;
-    }
-    .minus{
-        color: red;
+@media (min-width: 320px) {
+    .simulation{
+        font-size:calc(1rem + ((1vw - 3.2px) * 0.5625));
+        th{
+            font-size:calc(1rem + ((1vw - 3.2px) * 0.5625));
+        }
+        .align-center{
+            text-align:center;
+        }
+        .minus{
+            color: red;
+        }
     }
 }
