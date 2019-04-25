@@ -46,13 +46,13 @@ do_action( 'onepress_page_before_content' );
 						<tr>
 							<th>
 							</th>
-							<th>
+							<th class="align-center">
 								ゼロエネルギーハウスの場合
 							</th>
-							<th>
+							<th class="align-center">
 								平成28年省エネ基準の場合
 							</th>
-							<th>
+							<th class="align-center">
 								支払い差額
 							</th>
 						</tr>
