@@ -13,7 +13,13 @@
 		Please follow the below steps carefully to get API Credentials. Let’s go!<br />
 	</p>
 </header>
-<div class="notice notice-info is-dismissible"><p>if you are facing any issue while generating access token, then you can take help from <a href="https://www.google.co.in/search?q=how+to+generate+instagram+access+token&amp;ie=UTF-8&amp;oe=UTF-8" title="Google search for Instagram access token" target="_blank" rel="noreferrer nofollow noopener">Internet</a>. there are lots of videos and articles available there.</p></div>
+<div class="notice notice-info is-dismissible">
+<p>if you are facing any issue while generating access token, then you can take help from <a href="https://www.google.co.in/search?q=how+to+generate+instagram+access+token&amp;ie=UTF-8&amp;oe=UTF-8" title="Google search for Instagram access token" target="_blank" rel="noreferrer nofollow noopener">Internet</a>. there are lots of videos and articles available there.
+<br />e.g. you can generate token from the below sites and can add generated token in the plugin setting.<br />
+https://instagram.pixelunion.net/<br />
+https://webkul.com/blog/create-instagram-access-token/<br />
+https://instagram.themeruby.com/</p>
+</div>
 <div id="ig-ahcreds" style="display: none;">
 	<h4>
 		if you already have API credentials and already registerd an Application, but <strong>access token</strong> is not generated,<br /> then you can use
