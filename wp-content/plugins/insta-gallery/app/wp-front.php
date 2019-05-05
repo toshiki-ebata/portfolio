@@ -8,13 +8,6 @@ if (! defined('ABSPATH')) {
  * WP front page
  */
 
-// registering session
-/*
- * add_action('init', function(){
- * if( !session_id() )
- * session_start();
- * });
- */
  
 // load template files
 function insgal_template_path($template_name)

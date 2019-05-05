@@ -1,10 +1,10 @@
 === Instagram Gallery ===
-Contributors: buntisoft, sktei007
+Contributors: quadlayers
 Tags: instagram, instagram feed, instagram widget, gallery widget, pictures, carousel slider, image gallery, image slider, instagram gallery, instagram pictures
 Requires at least: 3.8.0
 Requires PHP: 5.3
 Tested up to: 5.1
-Stable tag: 2.1.8
+Stable tag: 2.1.9
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Donate link: https://www.paypal.me/karanpay
@@ -70,6 +70,9 @@ this error visible sometimes in PHP 7+ installations due to the missing CURL ext
 5. Gallery Widget
 
 == Changelog ==
+= 2.1.9 =
+* minor code changes
+
 = 2.1.8 =
 * Fixed: double popup issue with elementor plugin
 * swiper library updated
@@ -241,6 +244,9 @@ this error visible sometimes in PHP 7+ installations due to the missing CURL ext
 
 
 == Upgrade Notice ==
+= 2.1.9 =
+minor code changes
+
 = 2.1.8 =
 double popup issue solved while using elementor plugin
 

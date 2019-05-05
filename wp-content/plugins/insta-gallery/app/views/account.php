@@ -4,7 +4,6 @@ if (! defined('ABSPATH')) {
 }
 
 global $insgalleryIAC;
-// $insgalleryIAC['access_token'] = '12hfjhdsurybbjdjsudydsghgh';
 
 ?>
 

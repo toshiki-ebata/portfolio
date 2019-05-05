@@ -2,14 +2,14 @@
 /*
  * Plugin Name: Instagram Gallery
  * Description: Display pictures gallery on the website from Instagram account.
- * Author: Karan Singh
- * Author URI: https://www.karansingh.ml/
+ * Author: QuadLayers
+ * Author URI: https://www.quadlayers.com
  * Requires at least: 3.8
  * Requires PHP: 5.3
  * Tested up to: 5.1
  * Text Domain: insta-gallery
  * Domain Path: /languages/
- * Version: 2.1.8
+ * Version: 2.2.0
  */
 
 /*
@@ -24,7 +24,7 @@ if (! defined('ABSPATH')) {
 }
 
 // global constants
-define('INSGALLERY_VER', '2.1.8');
+define('INSGALLERY_VER', '2.2.0');
 define('INSGALLERY_PRODUCTION', true);
 
 define('INSGALLERY_PATH', plugin_dir_path(__FILE__));
