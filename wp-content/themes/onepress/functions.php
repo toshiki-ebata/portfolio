@@ -541,7 +541,7 @@ function change_post_menu_label() {
    add_action( 'init', 'change_post_object_label' );
    add_action( 'admin_menu', 'change_post_menu_label' );
 
-   /*--------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
 /*  レンダリングを妨げるリソースの除外 CSSのIDを遅延させる処理  */
 /*--------------------------------------------------------------*/
 function my_dequeue_plugin_files(){
@@ -573,3 +573,17 @@ function my_dequeue_plugin_files(){
 }
   add_action('wp_footer', 'my_enqueue_plugin_files');
   /*-----------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------*/
+/*  レンダリングを妨げるリソースの除外 JSファイルを遅延させる処理  */
+/*-----------------------------------------------------------------*/
+if(!(is_admin())){
+	function replace_scripttag($tag){
+		if(!preg_match('/defer/',$tag)){
+			return str_replace("type='text/javascript'",'async',$tag);
+			}
+		return $tag;
+	}
+	add_filter('script_loader_tag','replace_scripttag');
+}
+/*--------------------------------------------------------------*/
