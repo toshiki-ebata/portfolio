@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Gutenberg - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-03-30 12:59:54+0000\n"
+"PO-Revision-Date: 2019-04-21 03:01:30+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,134 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Plugins - Gutenberg - Stable (latest release)\n"
+
+#: build/edit-widgets/index.js:1
+msgid "Widgets screen content"
+msgstr "ウィジェット画面コンテンツ"
+
+#: build/edit-widgets/index.js:1
+msgid "Header"
+msgstr "ヘッダー"
+
+#: build/edit-widgets/index.js:1
+msgid "Footer"
+msgstr "フッター"
+
+#: build/edit-widgets/index.js:1
+msgid "Sidebar"
+msgstr "サイドバー"
+
+#: build/edit-widgets/index.js:1
+msgid "Widgets advanced settings"
+msgstr "ウィジェットの高度な設定"
+
+#: build/edit-widgets/index.js:1
+msgid "(experimental)"
+msgstr "(試験中)"
+
+#: build/edit-widgets/index.js:1
+msgid "Block Areas"
+msgstr "ブロックエリア"
+
+#: build/edit-widgets/index.js:1
+msgid "Widgets screen top bar"
+msgstr "ウィジェット画面の上部バー"
+
+#: build/block-editor/index.js:55
+msgid "This color combination may be hard for people to read."
+msgstr "この色の組み合わせは、読みづらい可能性があります。"
+
+#: build/block-editor/index.js:55
+msgid "Add Block"
+msgstr "ブロックを追加"
+
+#: build/block-library/index.js:14
+msgid "There is no poster image currently selected"
+msgstr "現在選択中のポスター画像はありません"
+
+#: build/block-library/index.js:14
+msgid "The current poster image url is %s"
+msgstr "現在のポスター画像 URL は %s です"
+
+#: build/block-library/index.js:14
+msgid "section"
+msgstr "セクション"
+
+#: build/block-library/index.js:14
+msgid "row"
+msgstr "行"
+
+#: build/block-library/index.js:14
+msgid "wrapper"
+msgstr "ラッパー"
+
+#: build/block-library/index.js:14
+msgid "container"
+msgstr "コンテナー"
+
+#: build/block-library/index.js:14
+msgid "A block that groups other blocks."
+msgstr "他のブロックをグループ化したブロック。"
+
+#: build/block-library/index.js:14
+msgid "Group"
+msgstr "グループ"
+
+#: build/block-library/index.js:14
+msgid "Crop image to fill entire column"
+msgstr "カラム全体を塗りつぶすように画像を切り抜く"
+
+#: build/block-library/index.js:14
+msgid "Drag an image to upload, select a file from your library or add one from an URL."
+msgstr "アップロードする画像をドラッグするか、ライブラリからファイルを選択、または URL から追加してください。"
+
+#: build/block-library/index.js:14
+msgid "You are now editing the image in the image block."
+msgstr "画像ブロック内の画像を編集中です。"
+
+#: build/block-library/index.js:14
+msgid "You are now viewing the image in the image block."
+msgstr "画像ブロック内の画像を閲覧中です。"
+
+#: build/block-library/index.js:14
+msgid "Play inline"
+msgstr "インラインで再生"
+
+#: build/block-library/index.js:14
+msgid "Leave empty if the image is purely decorative."
+msgstr "画像が単なる装飾の場合、空欄にします。"
+
+#: build/block-library/index.js:14
+msgid "Describe the purpose of the image"
+msgstr "画像の目的を説明"
+
+#: build/block-editor/index.js:55
+msgid "Add a block"
+msgstr "ブロックを追加"
+
+#: build/block-editor/index.js:55
+msgctxt "Block vertical alignment setting label"
+msgid "Change Alignment"
+msgstr "配置を変更"
+
+#: build/block-editor/index.js:55
+msgctxt "Block vertical alignment setting"
+msgid "Vertically Align Bottom"
+msgstr "縦位置を下に"
+
+#: build/block-editor/index.js:55
+msgctxt "Block vertical alignment setting"
+msgid "Vertically Align Middle"
+msgstr "縦位置を中央に"
+
+#: build/editor/index.js:17
+msgid "Replace Image"
+msgstr "画像を置換"
+
+#: build/block-editor/index.js:55
+msgctxt "Block vertical alignment setting"
+msgid "Vertically Align Top"
+msgstr "縦位置を上に"
 
 #: build/block-library/index.js:14
 msgid "Display a legacy widget."
@@ -85,7 +213,7 @@ msgstr "ウィジェットのクラス名。"
 msgid "Sorry, you are not allowed to access widgets on this site."
 msgstr "サイトのウィジェットにアクセスする権限がありません。"
 
-#: gutenberg.php:62 gutenberg.php:63
+#: gutenberg.php:49 gutenberg.php:50
 msgid "Widgets (beta)"
 msgstr "ウィジェット (ベータ)"
 
@@ -1954,11 +2082,11 @@ msgstr "投稿数を表示"
 msgid "Archives Settings"
 msgstr "アーカイブ設定"
 
-#: gutenberg.php:73
+#: gutenberg.php:60
 msgid "https://wordpress.org/support/plugin/gutenberg"
 msgstr "https://ja.wordpress.org/support/plugin/gutenberg"
 
-#: gutenberg.php:71
+#: gutenberg.php:58
 msgid "Support"
 msgstr "サポート"
 
@@ -2577,6 +2705,10 @@ msgid "Create password"
 msgstr "パスワードを作成"
 
 #: build/editor/index.js:17
+msgid "Move to Trash"
+msgstr "ゴミ箱へ移動"
+
+#: build/editor/index.js:17
 msgid "Parent Term"
 msgstr "親項目"
 
@@ -2660,7 +2792,7 @@ msgstr "公開済み"
 msgid "Schedule"
 msgstr "予約投稿"
 
-#: build/editor/index.js:17
+#: build/editor/index.js:17 build/edit-widgets/index.js:1
 msgid "Update"
 msgstr "更新"
 
@@ -2716,6 +2848,10 @@ msgstr "標準"
 #: build/editor/index.js:17
 msgid "Aside"
 msgstr "アサイド"
+
+#: build/editor/index.js:17
+msgid "Set Featured Image"
+msgstr "アイキャッチ画像を設定"
 
 #: build/editor/index.js:17
 msgid "Learn more about manual excerpts"
@@ -3512,6 +3648,10 @@ msgstr "ブロックは削除されたか、利用できません。"
 msgid "Reusable Blocks"
 msgstr "再利用ブロック"
 
+#: build/block-editor/index.js:55
+msgid "Cancel"
+msgstr "キャンセル"
+
 #: build/editor/index.js:17 build/format-library/index.js:12
 #: build/block-library/index.js:14
 msgid "Edit"
@@ -3610,7 +3750,7 @@ msgstr "印刷技術は、1440年に誕生。コアに採用される新しい�
 msgid "Add title"
 msgstr "タイトルを追加"
 
-#: gutenberg.php:122
+#: gutenberg.php:93
 msgid "Gutenberg development mode requires files to be built. Run <code>npm install</code> to install dependencies, <code>npm run build</code> to build the files or <code>npm run dev</code> to build the files and watch for changes. Read the <a href=\"https://github.com/WordPress/gutenberg/blob/master/CONTRIBUTING.md\">contributing</a> file for more information."
 msgstr "Gutenberg 開発モードは、ファイルのビルドが必要です。<code>npm install</code> を実行して依存のインストール後、<code>npm run build</code> でファイルをビルドするか、または <code>npm run dev</code> でファイルをビルドして差分を監視してください。詳しくは <a href=\"https://github.com/WordPress/gutenberg/blob/master/CONTRIBUTING.md\">contributing</a> を参照してください。"
 
@@ -3655,15 +3795,15 @@ msgid "Save"
 msgstr "保存"
 
 #. translators: %s: Minimum required version
-#: gutenberg.php:109
+#: gutenberg.php:80
 msgid "Gutenberg requires WordPress %s or later to function properly. Please upgrade WordPress before activating Gutenberg."
 msgstr "Gutenberg が正しく動作するには WordPress %s以降が必要です。Gutenberg を有効化する前に WordPress をアップグレードしてください。"
 
-#: gutenberg.php:77
+#: gutenberg.php:64
 msgid "Documentation"
 msgstr "ドキュメント"
 
-#: gutenberg.php:54 gutenberg.php:55
+#: gutenberg.php:41 gutenberg.php:42
 msgid "Demo"
 msgstr "デモ"
 
