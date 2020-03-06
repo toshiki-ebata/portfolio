@@ -540,3 +540,50 @@ function change_post_menu_label() {
    }
    add_action( 'init', 'change_post_object_label' );
    add_action( 'admin_menu', 'change_post_menu_label' );
+
+/*--------------------------------------------------------------*/
+/*  レンダリングを妨げるリソースの除外 CSSのIDを遅延させる処理  */
+/*--------------------------------------------------------------*/
+function my_dequeue_plugin_files(){
+	wp_dequeue_style('wp-block-library');
+	wp_dequeue_style('contact-form-7');
+	wp_dequeue_style('insta-gallery');
+	wp_dequeue_style('onepress-fonts');
+	wp_dequeue_style('onepress-animate');
+	wp_dequeue_style('onepress-fa');
+	wp_dequeue_style('onepress-bootstrap');
+	wp_dequeue_style('onepress-style');
+	wp_dequeue_style('onepress-gallery-lightgallery');
+	wp_dequeue_style('jquery-lazyloadxt-spinner-css');
+  }
+  add_action( 'wp_enqueue_scripts', 'my_dequeue_plugin_files', 9999);
+  add_action('wp_head', 'my_dequeue_plugin_files', 9999);
+  
+  function my_enqueue_plugin_files(){
+	wp_enqueue_style('wp-block-library');
+	wp_enqueue_style('contact-form-7');
+	wp_enqueue_style('insta-gallery');
+	wp_enqueue_style('onepress-fonts');
+	wp_enqueue_style('onepress-animate');
+	wp_enqueue_style('onepress-fa');
+	wp_enqueue_style('onepress-bootstrap');
+	wp_enqueue_style('onepress-style');
+	wp_enqueue_style('onepress-gallery-lightgallery');
+	wp_enqueue_style('jquery-lazyloadxt-spinner-css');
+}
+  add_action('wp_footer', 'my_enqueue_plugin_files');
+  /*-----------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------*/
+/*  レンダリングを妨げるリソースの除外 JSファイルを遅延させる処理  */
+/*-----------------------------------------------------------------*/
+if(!(is_admin())){
+	function replace_scripttag($tag){
+		if(!preg_match('/defer/',$tag)){
+			return str_replace("type='text/javascript'",'async',$tag);
+			}
+		return $tag;
+	}
+	add_filter('script_loader_tag','replace_scripttag');
+}
+/*--------------------------------------------------------------*/
